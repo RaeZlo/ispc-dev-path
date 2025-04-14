@@ -1,14 +1,7 @@
 # Fundamentos de Programación: Python, Tipos de Datos, Operadores y Estructuras de Control
 
-## Tabla de Contenidos
-1. [Introducción a Python](#1-introducción-a-python)
-2. [Tipos de Datos en Programación](#2-tipos-de-datos-en-programación)
-3. [Operadores en Programación](#3-operadores-en-programación)
-4. [Estructuras de Control](#4-estructuras-de-control)
-
 ---
 
-<a id="#1-introducción-a-python"></a>
 ## ¿Qué es Python?  
 Python es un **lenguaje de programación de alto nivel** conocido por su sintaxis simple, legible y cercana al lenguaje humano. Fue creado por **Guido van Rossum** a finales de los años 1980 y lanzado públicamente en **1991**. Su diseño prioriza la **facilidad de uso** y la **productividad**.  
 
@@ -69,8 +62,7 @@ Python es un **lenguaje de programación de alto nivel** conocido por su sintaxi
    - Algunos paquetes de nicho pueden estar poco mantenidos o desactualizados.  
 
 ---
-
-<a id="#2-tipos-de-datos-en-programación"></a>
+# Tipos de datos
 ## Introducción
 Los tipos de datos son el fundamento de todo lenguaje de programación. Determinan la naturaleza de la información, cómo se almacena, qué operaciones permite y cómo se comporta a nivel de memoria.
 
@@ -183,10 +175,8 @@ Modelos lógicos implementados sobre tipos básicos. No son nativos de los lengu
 - **Algoritmos comunes**: Dijkstra, BFS, DFS
 
 ---
-
-<a id="#3-operadores-en-programación"></a>
+# Operadores y Expresines
 ## Introducción
-
 Los **operadores** son símbolos o palabras clave que permiten realizar operaciones sobre variables y valores. Son esenciales para escribir expresiones, tomar decisiones, realizar cálculos y manipular datos. Aunque su sintaxis puede variar ligeramente entre lenguajes, su función suele ser similar.
 
 ## 1. Operadores Aritméticos
@@ -299,8 +289,7 @@ Permiten realizar una evaluación condicional en una sola línea.
 | `as`, `instanceof` | Python, Java | Conversión / verificación de tipo |
 
 ---
-
-<a id="#4-estructuras-de-control"></a>
+# Estructras de Cotrol
 ## Introducción
 Las **estructuras de control** permiten modificar el flujo de ejecución de un programa. Gracias a ellas, podemos tomar decisiones, repetir acciones y reaccionar ante condiciones dinámicas. Se dividen en dos grandes grupos:
 
