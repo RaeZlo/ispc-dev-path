@@ -124,24 +124,13 @@ Representan **la ausencia de un valor** o el hecho de que una variable aún no h
 ## 2. Tipos de Datos Compuestos (Estructurados)
 Tipos que agrupan múltiples valores, homogéneos o heterogéneos.
 
-### 🔁 Colecciones Secuenciales
-
-| Tipo     | Mutabilidad | Orden | Duplicados | Acceso             |
-|----------|-------------|-------|------------|--------------------|
-| Arreglo  | No          | Sí    | Sí         | Por índice         |
-| Lista    | Sí          | Sí    | Sí         | Índice, iteración  |
-| Tupla    | No          | Sí    | Sí         | Por posición       |
-
-### 🗃️ Colecciones No Secuenciales
-
-#### Conjuntos (`Set`)
-- **Propiedades**: Elementos únicos, sin orden
-- **Implementaciones**: HashSet, TreeSet (ordenado)
-
-#### Diccionarios (`Map`, `Dict`)
-- **Estructura**: Pares clave-valor
-- **Acceso eficiente**: Generalmente O(1) con tablas hash
-- **Sin duplicación de claves**
+| **Estructura**  | **Tipo de elementos** | **Tamaño**  | **Mutabilidad** | **Orden**      | **Acceso**          | **Usos comunes**                                           |
+|-----------------|-----------------------|-------------|-----------------|----------------|---------------------|------------------------------------------------------------|
+| **Arreglo (Array)** | Homogéneo (mismo tipo) | Fijo        | Inmutable       | Ordenado       | Acceso por índice   | Almacenar colecciones de elementos de tipo fijo, matrices, rendimiento optimizado por acceso directo. |
+| **Lista (List)**   | Heterogéneo (diferentes tipos) | Dinámico    | Mutable         | Ordenado       | Acceso por índice   | Cuando se necesita una colección que pueda cambiar durante la ejecución, colecciones de elementos mixtos. |
+| **Tupla (Tuple)**  | Heterogéneo (diferentes tipos) | Fijo        | Inmutable       | Ordenado       | Acceso por índice   | Cuando se requieren datos que no deben modificarse, como coordenadas o configuraciones constantes. |
+| **Conjunto (Set)** | Homogéneo (elementos únicos) | Dinámico    | Mutable         | No ordenado    | No se puede acceder por índice | Eliminar duplicados, operaciones matemáticas de conjuntos (unión, intersección, diferencia). |
+| **Diccionario (Dictionary)** | Clave-valor (heterogéneo) | Dinámico    | Mutable         | No ordenado    | Acceso por clave     | Almacenar pares clave-valor, bases de datos en memoria, tablas hash. |
 
 ## 3. Tipos Abstractos de Datos (TAD)
 Modelos lógicos implementados sobre tipos básicos. No son nativos de los lenguajes pero se usan ampliamente.
