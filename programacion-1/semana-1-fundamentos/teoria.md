@@ -8,7 +8,7 @@
 
 ---
 
-#1-introducción-a-python
+##1-introducción-a-python
 
 ## ¿Qué es Python?  
 Python es un **lenguaje de programación de alto nivel** conocido por su sintaxis simple, legible y cercana al lenguaje humano. Fue creado por **Guido van Rossum** a finales de los años 1980 y lanzado públicamente en **1991**. Su diseño prioriza la **facilidad de uso** y la **productividad**.  
