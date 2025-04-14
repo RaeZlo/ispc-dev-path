@@ -8,8 +8,7 @@
 
 ---
 
-##1-introducción-a-python
-
+<a id="#1-introducción-a-python"></a>
 ## ¿Qué es Python?  
 Python es un **lenguaje de programación de alto nivel** conocido por su sintaxis simple, legible y cercana al lenguaje humano. Fue creado por **Guido van Rossum** a finales de los años 1980 y lanzado públicamente en **1991**. Su diseño prioriza la **facilidad de uso** y la **productividad**.  
 
@@ -71,8 +70,7 @@ Python es un **lenguaje de programación de alto nivel** conocido por su sintaxi
 
 ---
 
-#2-tipos-de-datos-en-programación
-
+<a id="#2-tipos-de-datos-en-programación"></a>
 ## Introducción
 Los tipos de datos son el fundamento de todo lenguaje de programación. Determinan la naturaleza de la información, cómo se almacena, qué operaciones permite y cómo se comporta a nivel de memoria.
 
@@ -186,8 +184,7 @@ Modelos lógicos implementados sobre tipos básicos. No son nativos de los lengu
 
 ---
 
-#3-operadores-en-programación
-
+<a id="#3-operadores-en-programación"></a>
 ## Introducción
 
 Los **operadores** son símbolos o palabras clave que permiten realizar operaciones sobre variables y valores. Son esenciales para escribir expresiones, tomar decisiones, realizar cálculos y manipular datos. Aunque su sintaxis puede variar ligeramente entre lenguajes, su función suele ser similar.
@@ -303,8 +300,7 @@ Permiten realizar una evaluación condicional en una sola línea.
 
 ---
 
-#4-estructuras-de-control
-
+<a id="#4-estructuras-de-control"></a>
 ## Introducción
 Las **estructuras de control** permiten modificar el flujo de ejecución de un programa. Gracias a ellas, podemos tomar decisiones, repetir acciones y reaccionar ante condiciones dinámicas. Se dividen en dos grandes grupos:
 
