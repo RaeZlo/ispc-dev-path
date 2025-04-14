@@ -175,7 +175,7 @@ Modelos lógicos implementados sobre tipos básicos. No son nativos de los lengu
 - **Algoritmos comunes**: Dijkstra, BFS, DFS
 
 ---
-# Operadores y Expresines
+# Operadores y Expresiones
 ## Introducción
 Los **operadores** son símbolos o palabras clave que permiten realizar operaciones sobre variables y valores. Son esenciales para escribir expresiones, tomar decisiones, realizar cálculos y manipular datos. Aunque su sintaxis puede variar ligeramente entre lenguajes, su función suele ser similar.
 
@@ -289,7 +289,7 @@ Permiten realizar una evaluación condicional en una sola línea.
 | `as`, `instanceof` | Python, Java | Conversión / verificación de tipo |
 
 ---
-# Estructras de Cotrol
+# Estructuras de Control
 ## Introducción
 Las **estructuras de control** permiten modificar el flujo de ejecución de un programa. Gracias a ellas, podemos tomar decisiones, repetir acciones y reaccionar ante condiciones dinámicas. Se dividen en dos grandes grupos:
 
