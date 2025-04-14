@@ -147,16 +147,12 @@ Tipos que agrupan múltiples valores, homogéneos o heterogéneos.
 | Lista    | Sí          | Sí    | Sí         | Índice, iteración  |
 | Tupla    | No          | Sí    | Sí         | Por posición       |
 
-- **Listas**: Dinámicas, permiten agregar/quitar elementos
-- **Tuplas**: Inmutables, útiles para representar registros fijos
-
 ---
 
 ### 🗃️ Colecciones No Secuenciales
 
 #### Conjuntos (`Set`)
 - **Propiedades**: Elementos únicos, sin orden
-- **Operaciones comunes**: Unión, intersección, diferencia
 - **Implementaciones**: HashSet, TreeSet (ordenado)
 
 #### Diccionarios (`Map`, `Dict`)
@@ -217,39 +213,6 @@ Modelos lógicos implementados sobre tipos básicos. No son nativos de los lengu
 
 ---
 
-## Comparativa Interlenguaje
-
-| Característica         | C/C++       | Java         | Python       | JavaScript   |
-|------------------------|-------------|--------------|--------------|--------------|
-| Entero (64-bit)        | `long long` | `long`       | `int`        | `BigInt`     |
-| Cadena de texto        | `char[]`    | `String`     | `str`        | `String`     |
-| Diccionario            | `std::map`  | `HashMap`    | `dict`       | `Object`     |
-| Valor nulo             | `nullptr`   | `null`       | `None`       | `null`, `undefined` |
-| Memoria                | Manual      | Automática   | Automática   | Automática   |
-
----
-
-## Buenas Prácticas
-
-1. **Elección adecuada de tipos**:
-   - Usar `decimal` para cálculos monetarios.
-   - Evitar `float` si la precisión es crítica.
-
-2. **Optimización y rendimiento**:
-   - Arreglos para acceso por índice constante.
-   - Conjuntos para búsquedas rápidas de pertenencia.
-   - Diccionarios para mapeos lógicos.
-
-3. **Legibilidad y mantenimiento**:
-   - Usar enumeraciones en lugar de números mágicos.
-   - Documentar estructuras complejas con comentarios o diagramas.
-
-4. **Seguridad y control de errores**:
-   - Siempre comprobar nulos (`null` / `None`)
-   - Validar tipos cuando se recibe información externa
-
----
-
 ## Conclusión
 El dominio de los tipos de datos no solo mejora la eficiencia del programa, sino también su claridad, mantenimiento y robustez. Comprender sus características y limitaciones te permite:
 
@@ -259,3 +222,159 @@ El dominio de los tipos de datos no solo mejora la eficiencia del programa, sino
 - Adaptarte fácilmente a distintos lenguajes
 
 **📌 Recomendación final**: Aunque los fundamentos son universales, cada lenguaje tiene sus particularidades. Siempre vale la pena revisar su documentación oficial para detalles específicos.
+
+---
+
+# Operadores Comunes en Lenguajes de Programación
+
+## Introducción
+
+Los **operadores** son símbolos o palabras clave que permiten realizar operaciones sobre variables y valores. Son esenciales para escribir expresiones, tomar decisiones, realizar cálculos y manipular datos. Aunque su sintaxis puede variar ligeramente entre lenguajes, su función suele ser similar.
+
+---
+
+## 1. Operadores Aritméticos
+
+Permiten realizar operaciones matemáticas básicas.
+
+| Operador | Descripción        | Ejemplo       |
+|----------|--------------------|---------------|
+| `+`      | Suma               | `a + b`       |
+| `-`      | Resta              | `a - b`       |
+| `*`      | Multiplicación     | `a * b`       |
+| `/`      | División (real)    | `a / b`       |
+| `//`     | División entera    | `a // b` (Python) |
+| `%`      | Módulo (resto)     | `a % b`       |
+| `**`     | Potencia           | `a ** b` (Python) |
+| `^`      | Potencia o XOR     | Depende del lenguaje |
+
+> ⚠️ En algunos lenguajes como C/C++, `^` representa una operación lógica XOR, no potencia.
+
+---
+
+## 2. Operadores de Asignación
+
+Usados para asignar o actualizar valores.
+
+| Operador | Descripción                  | Ejemplo       |
+|----------|------------------------------|---------------|
+| `=`      | Asignación simple            | `x = 5`       |
+| `+=`     | Suma y asignación            | `x += 2` → `x = x + 2` |
+| `-=`     | Resta y asignación           | `x -= 3`      |
+| `*=`     | Multiplicación y asignación  | `x *= 4`      |
+| `/=`     | División y asignación        | `x /= 2`      |
+| `%=`     | Módulo y asignación          | `x %= 3`      |
+
+---
+
+## 3. Operadores de Comparación (Relacionales)
+
+Comparan valores y devuelven un valor booleano (`true` o `false`).
+
+| Operador | Significado             | Ejemplo        |
+|----------|--------------------------|----------------|
+| `==`     | Igual a                  | `a == b`       |
+| `!=`     | Distinto de              | `a != b`       |
+| `>`      | Mayor que                | `a > b`        |
+| `<`      | Menor que                | `a < b`        |
+| `>=`     | Mayor o igual que        | `a >= b`       |
+| `<=`     | Menor o igual que        | `a <= b`       |
+
+> 💡 Algunos lenguajes como Python y JavaScript también permiten comparar cadenas o fechas con estos operadores.
+
+---
+
+## 4. Operadores Lógicos
+
+Se utilizan para combinar expresiones booleanas.
+
+| Operador | Descripción     | Ejemplo             |
+|----------|------------------|---------------------|
+| `&&`     | AND (y lógico)   | `cond1 && cond2` (C/Java/JS) |
+| `||`     | OR (o lógico)    | `cond1 || cond2`             |
+| `!`      | NOT (negación)   | `!cond`                     |
+| `and`    | AND lógico       | `cond1 and cond2` (Python)  |
+| `or`     | OR lógico        | `cond1 or cond2`            |
+| `not`    | Negación lógica  | `not cond`                  |
+
+---
+
+## 5. Operadores Bit a Bit (Bitwise)
+
+Trabajan a nivel de bits. Usados en programación de bajo nivel, sistemas embebidos, criptografía, etc.
+
+| Operador | Descripción        | Ejemplo   |
+|----------|--------------------|-----------|
+| `&`      | AND bit a bit      | `a & b`   |
+| `|`      | OR bit a bit       | `a | b`   |
+| `^`      | XOR bit a bit      | `a ^ b`   |
+| `~`      | NOT bit a bit      | `~a`      |
+| `<<`     | Desplazamiento izq | `a << 1`  |
+| `>>`     | Desplazamiento der | `a >> 1`  |
+
+> 🛠️ Muy usados en manipulación de flags y optimización de operaciones matemáticas.
+
+---
+
+## 6. Operadores de Identidad y Pertenencia (en lenguajes dinámicos)
+
+### Identidad (Python)
+
+| Operador | Significado        | Ejemplo        |
+|----------|--------------------|----------------|
+| `is`     | Mismo objeto       | `a is b`       |
+| `is not` | Objeto distinto    | `a is not b`   |
+
+### Pertenencia (Python, JavaScript)
+
+| Operador | Significado             | Ejemplo           |
+|----------|--------------------------|-------------------|
+| `in`     | Contenido en colección  | `'x' in lista`    |
+| `not in` | No contenido             | `'z' not in texto`|
+
+---
+
+## 7. Operadores Ternarios / Condicionales
+
+Permiten realizar una evaluación condicional en una sola línea.
+
+- **Sintaxis general** (lenguajes C-like):  
+  `condición ? valor_si_verdadero : valor_si_falso`
+
+- **Python**:  
+  `valor_si_verdadero if condición else valor_si_falso`
+
+---
+
+## 8. Operadores Especiales (por lenguaje)
+
+| Operador        | Lenguaje     | Uso                             |
+|-----------------|--------------|----------------------------------|
+| `??`            | C#, JS       | Coalescencia nula (valor por defecto) |
+| `?:`            | C/C++, Java  | Ternario condicional             |
+| `===`, `!==`    | JavaScript   | Comparación estricta (valor y tipo) |
+| `=>`            | JS, C#       | Funciones lambda / expresiones flecha |
+| `as`, `instanceof` | Python, Java | Conversión / verificación de tipo |
+
+---
+
+## Comparativa entre Lenguajes (Operadores Básicos)
+
+| Categoría      | C/C++     | Java       | Python     | JavaScript |
+|----------------|-----------|------------|------------|------------|
+| Aritméticos    | Sí        | Sí         | Sí         | Sí         |
+| Asignación     | Sí        | Sí         | Sí         | Sí         |
+| Comparación    | Sí        | Sí         | Sí         | Sí         |
+| Lógicos        | `&&`, `||`, `!` | Igual | `and`, `or`, `not` | Igual     |
+| Bit a bit      | Sí        | Sí         | Sí         | Sí         |
+| Identidad      | Punteros  | Referencia | `is`       | `===`      |
+| Pertenencia    | Manual    | Manual     | `in`       | `in`, `hasOwnProperty` |
+| Ternario       | `?:`      | `?:`       | `if else` (inline) | `? :`     |
+
+---
+
+## Conclusión
+
+El dominio de los operadores permite escribir código más claro, conciso y eficiente. Conocer sus particularidades entre distintos lenguajes es clave para evitar errores y mejorar la expresividad del código.
+
+**💡 Recomendación**: Practicá resolviendo problemas simples (calculadoras, filtros, validaciones) usando operadores en diferentes contextos para interiorizarlos de manera natural.
