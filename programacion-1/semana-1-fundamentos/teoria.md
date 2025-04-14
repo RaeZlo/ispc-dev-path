@@ -70,23 +70,19 @@ Los tipos de datos son el fundamento de todo lenguaje de programación. Determin
 Son los tipos más básicos, nativamente soportados por los lenguajes. Representan valores simples.
 
 ### 🔢 Tipos Numéricos
-
-#### Enteros (`int`, `Integer`)
-- **Descripción**: Números sin parte decimal (ej. 5, -42)
-- **Rango común (32-bit)**: -2,147,483,648 a 2,147,483,647
+#### 📌 Enteros (`int`, `Integer`)
+Los enteros representan **números sin parte decimal**, como `5`, `0` o `-42`.  
+- **Rango común en 32 bits**: desde `-2,147,483,648` hasta `2,147,483,647`
 - **Variantes**:
-  - `short`, `long` (según cantidad de bits)
-  - `unsigned` (solo valores positivos)
+  - `short`, `long`: dependiendo de la cantidad de bits y el rango requerido
+  - `unsigned`: versión sin signo, solo valores positivos (mayor rango positivo)
 
-#### Punto Flotante (`float`, `double`)
-- **Descripción**: Números reales con parte decimal
-- **Precisión**:
-  - `float`: precisión simple (~6-9 dígitos, 32-bit)
-  - `double`: precisión doble (~15-17 dígitos, 64-bit)
-- **Uso típico**: Cálculos científicos, representación de valores fraccionarios
+#### 📌 Punto Flotante (`float`, `double`)
+Se usan para representar **números reales con decimales**.  
+- **`float`**: precisión simple (~6 a 9 dígitos, 32 bits)  
+- **`double`**: precisión doble (~15 a 17 dígitos, 64 bits)
 
-#### Tipos Numéricos Especializados
-
+#### 📌 Tipos Numéricos Especializados
 | Tipo         | Lenguajes         | Uso                          |
 |--------------|-------------------|------------------------------|
 | `decimal`    | Python, C#        | Finanzas (alta precisión)    |
@@ -94,20 +90,36 @@ Son los tipos más básicos, nativamente soportados por los lenguajes. Represent
 | `BigInteger` | Java, .NET        | Criptografía, grandes valores|
 
 ### 🔡 Texto
+📌 Cadenas de texto (`string`)
+Son **secuencias de caracteres** y se utilizan para representar palabras, frases o cualquier texto.  
+- **Codificación común**: Unicode (UTF-8 o UTF-16)
+- **Operaciones comunes**: concatenación, comparación, búsqueda, extracción de subcadenas (substring)
 
-#### Cadenas de texto (`String`)
-- **Descripción**: Secuencias de caracteres
-- **Codificación**: Unicode (UTF-8, UTF-16)
-- **Operaciones clave**: Concatenación, comparación, búsqueda, substring
+> 🔁 **Dato útil**: En algunos lenguajes como C o Java, las cadenas están compuestas por múltiples `char`.
 
-#### Caracteres (`char`)
-- **Unidad mínima de texto**: Un solo símbolo
-- **Tamaño**: 1 byte (ASCII) o 2 bytes (Unicode)
+### 📌 Caracteres (`char`)
+Representa un **único símbolo o carácter**, como `'a'`, `'9'` o `'%'`.  
+- Tamaño típico: **1 byte** (ASCII) o **2 bytes** (Unicode)
+- Útil para manipular texto a nivel de carácter individual (por ejemplo, recorrer letra por letra una palabra)
+
+> 💡 Aunque `char` puede parecer un tipo independiente, muchas veces es la **unidad básica** a partir de la cual se forman las cadenas (`string`).
 
 ### ✅ Booleanos (`bool`)
 - **Valores posibles**: `true` o `false`
 - **Representación interna**: Aunque conceptualmente es 1 bit, suele ocupar 1 byte por eficiencia
 - **Uso típico**: Condicionales, validaciones lógicas, control de flujo
+
+#### 🕳️ Valores Nulos
+Representan **la ausencia de un valor** o el hecho de que una variable aún no ha sido definida.
+
+| Lenguaje    | Valor nulo        |
+|-------------|-------------------|
+| Java, C#    | `null`            |
+| Python      | `None`            |
+| JavaScript  | `null`, `undefined` |
+
+> 🔐 **Buena práctica**: Siempre validar si una variable es nula antes de operar con ella, para evitar errores de ejecución (como `NullPointerException` en Java).
+
 
 ## 2. Tipos de Datos Compuestos (Estructurados)
 Tipos que agrupan múltiples valores, homogéneos o heterogéneos.
@@ -131,25 +143,7 @@ Tipos que agrupan múltiples valores, homogéneos o heterogéneos.
 - **Acceso eficiente**: Generalmente O(1) con tablas hash
 - **Sin duplicación de claves**
 
-## 3. Tipos Especiales
-
-### 🕳️ Valores Nulos
-- **Propósito**: Representar ausencia de valor o indefinición
-- **Por lenguaje**:
-  - `null` (Java, C#)
-  - `None` (Python)
-  - `undefined` / `null` (JavaScript)
-
-> 🔐 *Buena práctica*: Validar siempre antes de operar sobre variables que pueden ser nulas.
-
-### 🏷️ Enumeraciones (`enum`)
-- **Descripción**: Conjuntos de constantes simbólicas
-- **Ventajas**:
-  - Código más legible
-  - Mayor seguridad de tipo
-  - Validación en tiempo de compilación
-
-## 4. Tipos Abstractos de Datos (TAD)
+## 3. Tipos Abstractos de Datos (TAD)
 Modelos lógicos implementados sobre tipos básicos. No son nativos de los lenguajes pero se usan ampliamente.
 
 ### 🧮 Estructuras Lineales
