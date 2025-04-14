@@ -373,8 +373,116 @@ Permiten realizar una evaluación condicional en una sola línea.
 
 ---
 
-## Conclusión
+# Estructuras de Control Condicionales y Repetitivas
 
-El dominio de los operadores permite escribir código más claro, conciso y eficiente. Conocer sus particularidades entre distintos lenguajes es clave para evitar errores y mejorar la expresividad del código.
+## Introducción
 
-**💡 Recomendación**: Practicá resolviendo problemas simples (calculadoras, filtros, validaciones) usando operadores en diferentes contextos para interiorizarlos de manera natural.
+Las **estructuras de control** permiten modificar el flujo de ejecución de un programa. Gracias a ellas, podemos tomar decisiones, repetir acciones y reaccionar ante condiciones dinámicas. Se dividen en dos grandes grupos:
+
+- **Condicionales**: Permiten tomar decisiones.
+- **Repetitivas**: Permiten ejecutar bloques múltiples veces.
+
+Estas estructuras están presentes en prácticamente todos los lenguajes de programación, aunque con ligeras variaciones en la sintaxis.
+
+---
+
+## 1. Estructuras Condicionales
+
+Permiten ejecutar ciertos bloques de código si se cumple una condición lógica.
+
+### 🔹 if / else
+
+- **Función**: Evalúa una condición y ejecuta un bloque si es verdadera; puede tener una alternativa para el caso falso.
+
+| Estructura      | Descripción                         |
+|----------------|-------------------------------------|
+| `if`           | Ejecuta si la condición es verdadera |
+| `else`         | Alternativa si `if` no se cumple     |
+| `else if` / `elif` | Otras condiciones posibles        |
+
+> 💡 En Python se usa `elif` en lugar de `else if`.
+
+---
+
+### 🔹 switch / match
+
+- **Función**: Permite evaluar una expresión contra múltiples valores posibles, como alternativa a múltiples `if-else`.
+
+| Lenguaje     | Palabra clave  |
+|--------------|----------------|
+| C, Java      | `switch`       |
+| Python (3.10+)| `match`       |
+| JavaScript   | `switch`       |
+
+> ⚠️ En muchos lenguajes, es necesario un `break` para evitar ejecutar todos los casos siguientes.
+
+---
+
+## 2. Estructuras Repetitivas (Bucles)
+
+Permiten ejecutar un bloque de código varias veces, ya sea mientras se cumple una condición o para recorrer estructuras de datos.
+
+### 🔁 while
+
+- **Función**: Repite un bloque mientras una condición sea verdadera.
+- **Uso típico**: Cuando no se conoce de antemano cuántas repeticiones serán necesarias.
+
+---
+
+### 🔁 do...while
+
+- **Función**: Igual que `while`, pero garantiza al menos una ejecución porque la condición se evalúa **después** del bloque.
+- **Presente en**: C, C++, Java, JavaScript
+
+> ⚠️ No existe en Python, aunque se puede simular.
+
+---
+
+### 🔁 for
+
+- **Función**: Repite un bloque un número determinado de veces o sobre los elementos de una colección.
+- **Dos variantes comunes**:
+  - **Basado en contador**: `for (i = 0; i < n; i++)`
+  - **Basado en colección**: `for item in lista`
+
+| Lenguaje     | Variante basada en colección     |
+|--------------|----------------------------------|
+| Python       | `for elemento in iterable`       |
+| JavaScript   | `for...of`, `for...in`           |
+| Java         | `for (tipo var : colección)`     |
+
+---
+
+### 🔁 foreach (lectura secuencial)
+
+- **Función**: Itera sobre los elementos de una colección sin necesidad de usar índices manuales.
+- **Presente en**: Java, C#, PHP, Python (como `for-in`)
+
+---
+
+## 3. Palabras Clave de Control de Flujo
+
+Permiten alterar el comportamiento interno de los bucles y condicionales.
+
+| Palabra clave | Función                                      |
+|---------------|----------------------------------------------|
+| `break`       | Sale inmediatamente del bucle                |
+| `continue`    | Salta a la siguiente iteración               |
+| `return`      | Sale de una función (opcionalmente con valor)|
+| `pass`        | (Python) No hace nada; útil como placeholder |
+
+---
+
+## 5. Buenas Prácticas
+
+1. **Evitar bucles infinitos**:
+   - Siempre asegurarse de que las condiciones cambien eventualmente.
+2. **Usar `break` y `continue` con criterio**:
+   - Mejoran la legibilidad, pero su uso excesivo puede confundir.
+3. **Elegir la estructura adecuada**:
+   - `for`: cuando se conoce la cantidad de repeticiones.
+   - `while`: cuando la condición depende de algo externo.
+4. **Evitar estructuras anidadas complejas**:
+   - Dividir en funciones o aplicar lógica más clara.
+5. **Usar `match` / `switch` para múltiples condiciones comparativas**:
+   - Mejora la legibilidad respecto a múltiples `if`.
