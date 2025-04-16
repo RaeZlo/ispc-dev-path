@@ -1,4 +1,4 @@
-## **Enfoque de la materia**
+## **ENFOQUE DE LA MATERIA**
 - **Práctico**: Aplicación de AWS Well-Architected Framework  
 - **Reflexivo**: Impacto social y económico de decisiones técnicas  
 - **Actualizado**: Normativas y buenas prácticas en seguridad de datos  
