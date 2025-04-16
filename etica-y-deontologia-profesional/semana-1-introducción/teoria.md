@@ -16,8 +16,7 @@ La ética y la deontología están estrechamente relacionadas, aunque cumplen fu
 
 - La ética proporciona el marco filosófico general: es amplia, reflexiva y se centra en los valores que guían el comportamiento humano, como el respeto, la justicia, la responsabilidad o la honestidad. 
 - La deontología, por su parte, toma estos principios éticos y los traduce en normas claras y específicas que rigen el ejercicio profesional. Es más práctica y operativa, ya que establece lo que se debe y no se debe hacer en contextos laborales concretos.
-
-Por ejemplo, mientras que la ética sostiene que debemos ser honestos, la deontología médica indica cómo debe aplicarse esa honestidad: un médico no debe ocultar información importante a su paciente. 
+- Por ejemplo, mientras que la ética sostiene que debemos ser honestos, la deontología médica indica cómo debe aplicarse esa honestidad: un médico no debe ocultar información importante a su paciente. 
 
 En el contexto del desarrollo, ambas disciplinas son fundamentales. La ética ofrece la base filosófica sobre la que se construyen decisiones responsables en el manejo de datos, privacidad o seguridad digital. La deontología, en cambio, establece normas específicas de conducta para que los profesionales actúen de forma íntegra y transparente. Juntas, ética y deontología forman la base para una práctica profesional responsable y comprometida con el bienestar de usuarios, clientes y la sociedad en general.
 
