@@ -14,6 +14,7 @@
 - Reconocer necesidades de información en distintos contextos, proponiendo soluciones basadas en tecnología.
 
 **CONTENIDOS:**
+
 **Unidad 1: Introducción a Sistemas y Organizaciones**
 - Conceptos básicos de sistemas y organizaciones.
 - Teoría General de Sistemas y Enfoque Sistémico.
