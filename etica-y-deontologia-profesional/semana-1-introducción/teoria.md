@@ -1,11 +1,9 @@
 # Moral, Ética y Deontología Profesional
 
-## Definiciones Clave
-
-### Moral
+## Moral
 Conjunto de reglas aplicadas en la vida cotidiana que guían las acciones individuales, orientando juicios sobre lo correcto/incorrecto. Según Esperanza Guisan, incluye códigos, costumbres y normas tácitas o explícitas que regulan conductas en una sociedad.
 
-### Ética
+## Ética
 Reflexión filosófica sobre la moral que investiga la conducta humana de manera racional y teórica, explicando las reglas morales con fundamentación científica.
 
 ## Deontología Profesional
@@ -13,12 +11,7 @@ La deontología profesional es el conjunto de normas y principios éticos que gu
 
 Por lo general, estas normas están reunidas en los llamados códigos deontológicos, que sirven como guía y, en algunos casos, tienen valor legal. Su propósito es evitar malas prácticas y promover una actitud profesional basada en valores.
 
-## Relación entre Ética y Deontología
-Claro, aquí tienes un texto unificado y coherente que combina ambas partes, explicando la relación entre ética y deontología profesional, con un enfoque hacia el desarrollo cloud:
-
----
-
-**Relación entre Ética y Deontología Profesional**
+## Relación entre Ética y Deontología Profesional
 La ética y la deontología están estrechamente relacionadas, aunque cumplen funciones diferentes en el ámbito profesional. 
 
 - La ética proporciona el marco filosófico general: es amplia, reflexiva y se centra en los valores que guían el comportamiento humano, como el respeto, la justicia, la responsabilidad o la honestidad. 
@@ -27,10 +20,6 @@ La ética y la deontología están estrechamente relacionadas, aunque cumplen fu
 Por ejemplo, mientras que la ética sostiene que debemos ser honestos, la deontología médica indica cómo debe aplicarse esa honestidad: un médico no debe ocultar información importante a su paciente. 
 
 En el contexto del desarrollo, ambas disciplinas son fundamentales. La ética ofrece la base filosófica sobre la que se construyen decisiones responsables en el manejo de datos, privacidad o seguridad digital. La deontología, en cambio, establece normas específicas de conducta para que los profesionales actúen de forma íntegra y transparente. Juntas, ética y deontología forman la base para una práctica profesional responsable y comprometida con el bienestar de usuarios, clientes y la sociedad en general.
-
----
-
-¿Te gustaría que lo adapte para una presentación, ensayo o algo más específico?
 
 ---
 
