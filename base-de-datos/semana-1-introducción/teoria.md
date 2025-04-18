@@ -155,17 +155,10 @@ Las bases de datos pueden clasificarse según **la variabilidad** de los datos o
 ### 📌 **Según su Contenido**
 Se clasifican de acuerdo con el tipo de información que priorizan.
 
-- Bases de datos jerárquicas
-Organizan los datos en una estructura de árbol, con relaciones padre-hijo. Cada hijo tiene un único padre.
-- Bases de datos de red
-Similar a las jerárquicas, pero permiten relaciones más complejas: un hijo puede tener varios padres.
-- Bases de datos deductivas
-Permiten realizar inferencias lógicas a partir de los datos almacenados, usando reglas y hechos.
-- Bases de datos multidimensionales
-Diseñadas para analizar grandes volúmenes de datos desde distintas perspectivas (por ejemplo, ventas por región, tiempo, producto).
-- Bases de datos bibliográficas
-Almacenan referencias a documentos como libros, artículos, tesis, etc., sin contener el texto completo.
-- Bases de datos de texto completo
-Almacenan documentos en su totalidad, permitiendo búsquedas dentro del contenido textual.
-- Bases de datos relacionales
-Organizan los datos en tablas relacionadas entre sí mediante claves. Es el modelo más común en aplicaciones actuales.
+- Bases de datos jerárquicas: Organizan los datos en una estructura de árbol, con relaciones padre-hijo. Cada hijo tiene un único padre.
+- Bases de datos de red: Similar a las jerárquicas, pero permiten relaciones más complejas: un hijo puede tener varios padres.
+- Bases de datos deductivas: Permiten realizar inferencias lógicas a partir de los datos almacenados, usando reglas y hechos.
+- Bases de datos multidimensionales: Diseñadas para analizar grandes volúmenes de datos desde distintas perspectivas (por ejemplo, ventas por región, tiempo, producto).
+- Bases de datos bibliográficas: Almacenan referencias a documentos como libros, artículos, tesis, etc., sin contener el texto completo.
+- Bases de datos de texto completo: Almacenan documentos en su totalidad, permitiendo búsquedas dentro del contenido textual.
+- Bases de datos relacionales: Organizan los datos en tablas relacionadas entre sí mediante claves. Es el modelo más común en aplicaciones actuales.
