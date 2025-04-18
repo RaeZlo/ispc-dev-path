@@ -128,7 +128,3 @@ El modo de funcionamiento de los SGBD se puede dividir en tres fases: la fase de
 
 - **Lenguaje de Control de Datos (DCL)**:  
   Este lenguaje se utiliza para controlar quién tiene acceso a los datos y qué operaciones pueden realizar. Los administradores lo usan para gestionar la seguridad, como dar permisos de lectura o escritura a ciertos usuarios.
-
---- 
-
-¿Quieres que lo pase a PDF o te ayudo a integrarlo en algún documento?
