@@ -167,13 +167,3 @@ Ir más allá de cumplir con lo mínimo. El desarrollador también debe:
 
 Aquí entra el enfoque del **"diseño centrado en valores"**, que busca incorporar principios como **la equidad, la privacidad y la autonomía** desde el comienzo del desarrollo, no después.
 
-# 🎓 Educación ética
-
-La ética no se aprende solo con reglas. Se necesita:
-
-- Desarrollar **sensibilidad moral**.
-- Aprender a **analizar dilemas** desde distintas perspectivas.
-- Saber **comunicar decisiones éticas**.
-- Comprender el **impacto social** de la tecnología.
-
-Los estudios de caso y la reflexión en grupo son claves para formar esta capacidad ética.
