@@ -24,33 +24,31 @@ Cada uno de estos pilares aborda aspectos clave que aseguran que las cargas de t
 6. **Sostenibilidad**  
    El pilar de sostenibilidad se refiere a minimizar los impactos ambientales de las cargas de trabajo en la nube. AWS, a través de este pilar, promueve el uso eficiente de recursos para reducir el consumo de energía y las emisiones de carbono. También involucra comprender el impacto ambiental de las operaciones y tomar decisiones que favorezcan la reducción de la huella de carbono, como la utilización de recursos energéticamente eficientes y la optimización de la infraestructura.
 
-## Conclusión
+
 
 El **AWS Well-Architected Framework** no solo es una serie de principios de diseño para la creación de infraestructuras, sino que también es una herramienta estratégica que permite a las organizaciones mejorar de manera continua. Al basarse en estos seis pilares fundamentales, las empresas pueden crear soluciones que sean no solo eficientes y rentables, sino también seguras, confiables y sostenibles, lo que resulta en una mayor confianza y satisfacción para los usuarios finales.
-
----
 
 ## Principios de Diseño Generales (Aplicables a Todos los Pilares)
 
 Estos principios se enfocan en mejores prácticas universales que deben considerarse independientemente del pilar específico y que son relevantes para la construcción de una infraestructura sólida, eficiente y flexible en la nube.
 
 **1. Dejar de hacer estimaciones sobre las necesidades de capacidad**  
-*"El primer principio es dejar de hacer estimaciones sobre las necesidades de capacidad. En lugar de basarnos en suposiciones o predicciones, debemos aprovechar la **escalabilidad automática** de la nube. Con AWS, podemos ajustar los recursos a las demandas en tiempo real, lo que elimina la necesidad de estimaciones a largo plazo."*
+El primer principio es dejar de hacer estimaciones sobre las necesidades de capacidad. En lugar de basarnos en suposiciones o predicciones, debemos aprovechar la **escalabilidad automática** de la nube. Con AWS, podemos ajustar los recursos a las demandas en tiempo real, lo que elimina la necesidad de estimaciones a largo plazo.
 
 **2. Probar los sistemas a escala de producción**  
-*"El segundo principio es probar los sistemas a escala de producción. No puedes saber cómo se comportará tu sistema bajo carga real hasta que lo pongas a prueba en producción. **AWS** nos permite hacer esto de forma más sencilla, probando y ajustando las arquitecturas en un entorno real, garantizando que se adapten a las necesidades reales de los usuarios."*
+El segundo principio es probar los sistemas a escala de producción. No puedes saber cómo se comportará tu sistema bajo carga real hasta que lo pongas a prueba en producción. **AWS** nos permite hacer esto de forma más sencilla, probando y ajustando las arquitecturas en un entorno real, garantizando que se adapten a las necesidades reales de los usuarios.
 
 **3. Automatizar para facilitar la experimentación en arquitecturas**  
-*"Automatizar la infraestructura es clave para facilitar la experimentación. Usando herramientas como **AWS CloudFormation** o **AWS Systems Manager**, podemos automatizar la creación, implementación y monitoreo de recursos. Esto nos permite experimentar de manera rápida y sin miedo, sabiendo que podemos volver a un estado estable en cualquier momento."*
+Automatizar la infraestructura es clave para facilitar la experimentación. Usando herramientas como **AWS CloudFormation** o **AWS Systems Manager**, podemos automatizar la creación, implementación y monitoreo de recursos. Esto nos permite experimentar de manera rápida y sin miedo, sabiendo que podemos volver a un estado estable en cualquier momento.
 
 **4. Dar paso a las arquitecturas evolutivas**  
-*"El siguiente principio es dar paso a arquitecturas evolutivas. Las necesidades de los negocios cambian rápidamente, por lo que necesitamos arquitecturas que puedan evolucionar de forma continua. En lugar de construir todo de una vez, debemos diseñar soluciones que sean fácilmente adaptables y escalables a medida que los requisitos de negocio crecen."*
+El siguiente principio es dar paso a arquitecturas evolutivas. Las necesidades de los negocios cambian rápidamente, por lo que necesitamos arquitecturas que puedan evolucionar de forma continua. En lugar de construir todo de una vez, debemos diseñar soluciones que sean fácilmente adaptables y escalables a medida que los requisitos de negocio crecen.
 
 **5. Impulsar arquitecturas mediante el uso de datos**  
-*"Para mejorar nuestras arquitecturas, debemos impulsar el diseño a partir de datos. Utilizar **AWS CloudWatch**, **X-Ray** o **AWS Trusted Advisor** nos permite monitorear el rendimiento en tiempo real y tomar decisiones basadas en datos. Con esta información, podemos hacer ajustes proactivos y mejorar la eficiencia y confiabilidad de nuestros sistemas."*
+Para mejorar nuestras arquitecturas, debemos impulsar el diseño a partir de datos. Utilizar **AWS CloudWatch**, **X-Ray** o **AWS Trusted Advisor** nos permite monitorear el rendimiento en tiempo real y tomar decisiones basadas en datos. Con esta información, podemos hacer ajustes proactivos y mejorar la eficiencia y confiabilidad de nuestros sistemas.
 
 **6. Lograr mejoras mediante los días de prueba**  
-*"Finalmente, el último principio es lograr mejoras mediante los días de prueba. Implementar nuevas funcionalidades o cambios graduales en un entorno de prueba nos permite detectar problemas antes de que afecten a los usuarios finales. AWS facilita este proceso con herramientas como **AWS Lambda** y **EC2 Auto Scaling**, para que podamos probar y ajustar a pequeña escala antes de realizar cambios grandes."*
+Finalmente, el último principio es lograr mejoras mediante los días de prueba. Implementar nuevas funcionalidades o cambios graduales en un entorno de prueba nos permite detectar problemas antes de que afecten a los usuarios finales. AWS facilita este proceso con herramientas como **AWS Lambda** y **EC2 Auto Scaling**, para que podamos probar y ajustar a pequeña escala antes de realizar cambios grandes.
 
 ## Principios de Diseño Específicos por Pilares
 
@@ -103,10 +101,6 @@ La **sostenibilidad** busca minimizar el impacto ambiental de las soluciones en 
 - **Optimiza el uso de recursos**: Emplear instancias de **bajo consumo energético** y diseñar arquitecturas que optimicen el uso de recursos, como el uso compartido de infraestructuras.
 - **Minimiza la huella de carbono**: Utilizar **Amazon EC2 Spot Instances** y otros recursos eficientes para reducir la energía utilizada.
 - **Monitorea el impacto ambiental**: Implementar métricas para evaluar el impacto ambiental de las cargas de trabajo, por ejemplo, mediante el uso de servicios de monitoreo de eficiencia energética.
-
-## Conclusión
-
-El **AWS Well-Architected Framework** no solo establece principios de diseño generales, sino que también ofrece pautas específicas para cada uno de sus pilares. Estos principios se complementan entre sí y ayudan a construir una infraestructura más robusta, rentable y eficiente. Al aplicar tanto los principios generales como los específicos de cada pilar, las organizaciones pueden crear soluciones de nube que no solo cumplen con los requisitos del negocio, sino que también siguen las mejores prácticas de la industria en términos de seguridad, fiabilidad, rendimiento y sostenibilidad.
 
 ---
 
@@ -183,7 +177,3 @@ La ética no se aprende solo con reglas. Se necesita:
 - Comprender el **impacto social** de la tecnología.
 
 Los estudios de caso y la reflexión en grupo son claves para formar esta capacidad ética.
-
-# 🧠 En resumen
-
-La **responsabilidad profesional en el desarrollo de software** implica actuar **con ética, conocimiento y conciencia social**. Un desarrollador no solo crea código: también **moldea el mundo** a través de sus decisiones. Por eso, la excelencia técnica debe ir de la mano con una sólida formación ética.
