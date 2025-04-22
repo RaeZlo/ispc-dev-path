@@ -1,7 +1,7 @@
 ## **¿Qué es un conjunto?**
 Un conjunto es una colección de elementos o objetos que comparten una propiedad en común. Estos elementos pueden ser números, objetos o cualquier cosa que pueda ser definida con claridad y precisión.
 
-**Notación de los conjuntos**
+## **Notación de los conjuntos**
 Los conjuntos suelen representarse por letras mayúsculas, y sus elementos se escriben entre llaves. Por ejemplo, el conjunto de números naturales menores que 5 se puede escribir como:
 
 A = {1, 2, 3, 4}
