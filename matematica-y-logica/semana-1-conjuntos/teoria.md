@@ -1,11 +1,11 @@
-### **¿Qué es un conjunto?**
+## **¿Qué es un conjunto?**
 
 Un conjunto es una colección de objetos o elementos que comparten una propiedad en común. Estos elementos pueden ser números, letras, personas, objetos, etc. Los conjuntos son fundamentales en la teoría de conjuntos, una rama de las matemáticas.
 
 **Notación de un conjunto**  
 Un conjunto se denota generalmente por una letra mayúscula (por ejemplo, \( A \), \( B \), \( C \)). Los elementos del conjunto se escriben entre llaves, separados por comas. Por ejemplo, el conjunto \( A = \{1, 2, 3\} \) contiene los elementos 1, 2 y 3.
 
-### **Tipos de conjuntos**
+## **Tipos de conjuntos**
 
 - **Conjunto Universal**: Es el conjunto que contiene todos los elementos posibles para un contexto dado. Se denota generalmente por \( U \). Todos los otros conjuntos son subconjuntos del conjunto universal.
   
@@ -21,7 +21,7 @@ Un conjunto se denota generalmente por una letra mayúscula (por ejemplo, \( A \
 
 - **Conjunto heterogéneo**: Son conjuntos cuyos elementos son diferentes en tipo o naturaleza. Ejemplo: \( C = \{1, "a", 3.14\} \).
 
-###**Pertenencia e Inclusión**
+##**Pertenencia e Inclusión**
 
 - **Pertenencia**: Un elemento pertenece a un conjunto si es uno de los elementos que lo componen. Se denota como \( a \in A \), que se lee como "el elemento \( a \) pertenece al conjunto \( A \)".
   
@@ -31,7 +31,7 @@ Un conjunto se denota generalmente por una letra mayúscula (por ejemplo, \( A \
   
   Ejemplo: Si \( A = \{1, 2\} \) y \( B = \{1, 2, 3\} \), entonces \( A \subseteq B \).
 
-### **Cómo expresar un conjunto**
+## **Cómo expresar un conjunto**
 
 - **Por extensión**: En este tipo de expresión, se enumeran todos los elementos del conjunto entre llaves. Es decir, se mencionan explícitamente los elementos que lo componen.
   
@@ -41,7 +41,7 @@ Un conjunto se denota generalmente por una letra mayúscula (por ejemplo, \( A \
   
   Ejemplo: \( B = \{ x \mid x \in \mathbb{N}, x \text{ es par} \} \), que describe el conjunto de los números naturales pares.
 
-### **Numerabilidad y Cardinalidad**
+## **Numerabilidad y Cardinalidad**
 
 - **Numerabilidad**: Un conjunto es numerable si sus elementos pueden ser puestos en correspondencia uno a uno con los números naturales. Es decir, los elementos del conjunto pueden ser contados, aunque sea de forma infinita.
 
