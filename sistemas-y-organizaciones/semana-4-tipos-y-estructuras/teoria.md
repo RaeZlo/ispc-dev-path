@@ -4,7 +4,7 @@ Las estructuras organizacionales definen **cómo se distribuyen las responsabili
 
 ### 🔹 1. Estructura **Jerárquica**
 
-- **Descripción**: Basada en una cadena de mando vertical, donde los empleados responden a un superior directo. Se encuentra comúnmente en organizaciones tradicionales y grandes corporaciones.
+Basada en una cadena de mando vertical, donde los empleados responden a un superior directo. Se encuentra comúnmente en organizaciones tradicionales y grandes corporaciones.
 - **Características**:
   - Claridad en la autoridad y los roles.
   - Toma de decisiones centralizada.
@@ -19,7 +19,7 @@ Las estructuras organizacionales definen **cómo se distribuyen las responsabili
 
 ### 🔹 2. Estructura **Matricial**
 
-- **Descripción**: Combina una estructura funcional con una orientada a proyectos. Los empleados pueden tener más de un superior (por ejemplo, un jefe de proyecto y un jefe funcional).
+Combina una estructura funcional con una orientada a proyectos. Los empleados pueden tener más de un superior (por ejemplo, un jefe de proyecto y un jefe funcional).
 - **Características**:
   - Permite colaboración transversal.
   - Uso eficiente de recursos.
@@ -33,7 +33,7 @@ Las estructuras organizacionales definen **cómo se distribuyen las responsabili
 
 ### 🔹 3. Estructura **Plana**
 
-- **Descripción**: Tiene pocos niveles jerárquicos. Promueve la autonomía de los empleados y la horizontalidad en la comunicación.
+Tiene pocos niveles jerárquicos. Promueve la autonomía de los empleados y la horizontalidad en la comunicación.
 - **Características**:
   - Comunicación abierta y directa.
   - Mayor participación en la toma de decisiones.
@@ -47,7 +47,7 @@ Las estructuras organizacionales definen **cómo se distribuyen las responsabili
 
 ### 🔹 4. Estructura **por Proyectos**
 
-- **Descripción**: Organizada en torno a proyectos específicos. Cada equipo trabaja temporalmente con un objetivo definido, disolviéndose al finalizar el proyecto.
+Organizada en torno a proyectos específicos. Cada equipo trabaja temporalmente con un objetivo definido, disolviéndose al finalizar el proyecto.
 - **Características**:
   - Orientación a resultados.
   - Alta adaptabilidad.
