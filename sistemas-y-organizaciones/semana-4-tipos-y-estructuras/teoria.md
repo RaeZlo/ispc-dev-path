@@ -59,6 +59,90 @@ Organizada en torno a proyectos específicos. Cada equipo trabaja temporalmente 
   - Mayor necesidad de coordinación.
 - **Ejemplo**: Consultoras, empresas de desarrollo de software o diseño industrial.
 
+Aquí tienes el texto con la información sobre los cinco tipos de estructura organizacional según Mintzberg, integrado de forma coherente y manteniendo el estilo y formato del documento original:
+
+---
+
+## 📌 **Estructuras Organizacionales**
+
+Las estructuras organizacionales definen **cómo se distribuyen las responsabilidades, tareas y autoridad** dentro de una organización. Afectan directamente la forma en que se gestionan los recursos, se comunican los equipos y se adoptan decisiones, incluyendo la integración de tecnologías de la información (TI).
+
+### 🔹 1. Estructura **Jerárquica**
+
+Basada en una cadena de mando vertical, donde los empleados responden a un superior directo. Se encuentra comúnmente en organizaciones tradicionales y grandes corporaciones.
+- **Características**:
+  - Claridad en la autoridad y los roles.
+  - Toma de decisiones centralizada.
+  - Comunicación predominantemente descendente.
+- **Ventajas**:
+  - Control organizacional fuerte.
+  - Definición clara de responsabilidades.
+- **Desventajas**:
+  - Baja flexibilidad.
+  - Lenta adaptación al cambio.
+- **Ejemplo**: Un ministerio gubernamental o una fábrica tradicional con departamentos funcionales (producción, finanzas, RR.HH.).
+
+### 🔹 2. Estructura **Matricial**
+
+Combina una estructura funcional con una orientada a proyectos. Los empleados pueden tener más de un superior (por ejemplo, un jefe de proyecto y un jefe funcional).
+- **Características**:
+  - Permite colaboración transversal.
+  - Uso eficiente de recursos.
+- **Ventajas**:
+  - Mejora la comunicación entre áreas.
+  - Flexibilidad para responder a proyectos complejos.
+- **Desventajas**:
+  - Confusión en la autoridad.
+  - Posibles conflictos entre líderes.
+- **Ejemplo**: Una empresa de ingeniería que desarrolla varios proyectos simultáneamente con recursos compartidos.
+
+### 🔹 3. Estructura **Plana**
+
+Tiene pocos niveles jerárquicos. Promueve la autonomía de los empleados y la horizontalidad en la comunicación.
+- **Características**:
+  - Comunicación abierta y directa.
+  - Mayor participación en la toma de decisiones.
+- **Ventajas**:
+  - Agilidad en la respuesta.
+  - Mayor innovación y motivación.
+- **Desventajas**:
+  - Dificultades en organizaciones grandes.
+  - Ambigüedad en funciones si no se gestiona bien.
+- **Ejemplo**: Startups tecnológicas o empresas creativas que trabajan en entornos ágiles.
+
+### 🔹 4. Estructura **por Proyectos**
+
+Organizada en torno a proyectos específicos. Cada equipo trabaja temporalmente con un objetivo definido, disolviéndose al finalizar el proyecto.
+- **Características**:
+  - Orientación a resultados.
+  - Alta adaptabilidad.
+- **Ventajas**:
+  - Foco claro en objetivos concretos.
+  - Rápida reorganización de equipos.
+- **Desventajas**:
+  - Inestabilidad para los empleados.
+  - Mayor necesidad de coordinación.
+- **Ejemplo**: Consultoras, empresas de desarrollo de software o diseño industrial.
+
+## 🔹 Estructuras según **Mintzberg**
+
+Henry Mintzberg identificó cinco configuraciones estructurales que reflejan cómo se organizan las empresas en distintos contextos y etapas de desarrollo:
+
+- **Estructura Empresarial**: Empresa joven y pequeña que opera en un entorno dinámico. Se basa en una estructura simple, con un empresario como líder principal.
+  - **Ejemplo**: Un pequeño negocio que inicia operaciones.
+
+- **Burocracia de Máquina**: Organización grande, operando en un entorno estable. Se caracteriza por procesos estandarizados y una toma de decisiones centralizada.
+  - **Ejemplo**: Una empresa de manufactura mediana.
+
+- **Burocracia Divisionalizada**: Conjunto de unidades semiindependientes, cada una especializada en productos o servicios diferentes, coordinadas desde una oficina central.
+  - **Ejemplo**: Corporaciones como General Motors.
+
+- **Burocracia Profesional**: Organización donde el trabajo depende del conocimiento especializado. La autoridad está más descentralizada y los profesionales tienen autonomía.
+  - **Ejemplo**: Hospitales, despachos legales, universidades.
+
+- **Adhocracia**: Estructura flexible y adaptable, formada por equipos multidisciplinarios. Ideal para entornos cambiantes y proyectos innovadores.
+  - **Ejemplo**: Empresas de consultoría como Rand Corporation.
+
 ---
 
 ## 🧩 **Relación entre la Estructura Organizacional y el Área de TI**
