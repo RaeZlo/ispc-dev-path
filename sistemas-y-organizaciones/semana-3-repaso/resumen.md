@@ -94,8 +94,27 @@ Estos modelos y conceptos proporcionan marcos para analizar la competencia y la 
 *   **Modelo de compañía virtual:** Utiliza redes para enlazar personas, activos e ideas, permitiendo **alianzas estratégicas** sin límites organizacionales tradicionales para crear y distribuir productos/servicios de forma flexible (Ej. Li & Fung).
 *   **Ecosistemas de negocios:** Redes de industrias interdependientes donde **empresas clave crean plataformas utilizadas por empresas de nicho** (Ej. plataforma de Internet móvil, Microsoft, Walmart). La tecnología de la información juega un papel poderoso en el establecimiento de estos ecosistemas.
 
-**4. ¿Cuáles son los retos impuestos por los sistemas estratégicos de información y cómo hay que hacerles frente?**
+**4. ¿Cuáles son los retos impuestos por los sistemas estratégicos de información y cómo deben abordarse?**
 
-La implementación y el mantenimiento de sistemas estratégicos de información presentan varios retos:
+Los sistemas estratégicos de información pueden ofrecer **ventajas competitivas significativas**, pero también imponen desafíos importantes que deben gestionarse cuidadosamente:
 
-*   Un reto importante es **sostener la ventaja competitiva**. Los competidores pueden...
+*   **Resistencia organizacional al cambio:** La implementación de estos sistemas puede alterar estructuras, procesos y relaciones existentes, lo cual genera resistencia por parte de los empleados y áreas afectadas. Esta resistencia puede frenar o incluso hacer fracasar la implementación.
+    *   **Solución:** Involucrar a los usuarios finales desde el principio, realizar una buena gestión del cambio, capacitar adecuadamente y comunicar claramente los beneficios del sistema.
+
+*   **Coherencia con los objetivos estratégicos:** No todos los sistemas de información tienen un impacto estratégico. Implementar tecnología sin una clara alineación con los objetivos de la empresa puede resultar en desperdicio de recursos.
+    *   **Solución:** Alinear el desarrollo y adopción de sistemas con la estrategia de negocio de forma explícita. Involucrar a la alta dirección en el diseño de los sistemas estratégicos.
+
+*   **Alta inversión inicial y riesgos tecnológicos:** Estos sistemas suelen requerir **inversiones significativas en tecnología, infraestructura, capacitación y rediseño de procesos**, con riesgos asociados a fallas, obsolescencia o falta de adopción.
+    *   **Solución:** Realizar análisis de costo-beneficio, estudios de viabilidad técnica y económica, y planificación a largo plazo. Adoptar tecnologías probadas y flexibles.
+
+*   **Dependencia tecnológica y seguridad:** Un sistema estratégico exitoso puede crear una **fuerte dependencia tecnológica**, y también puede ser blanco de ataques, fallas o errores críticos que afecten la operación.
+    *   **Solución:** Invertir en ciberseguridad, respaldo de datos, mantenimiento preventivo y protocolos de contingencia.
+
+*   **Imitación por parte de competidores:** Una ventaja tecnológica puede ser temporal si otros competidores la imitan rápidamente.
+    *   **Solución:** Enfocarse no solo en la tecnología, sino en **cómo se integra con los procesos, la cultura organizacional, las competencias clave y las relaciones externas**, creando así una **ventaja difícil de replicar**.
+
+*   **Impacto en la estructura organizacional y en la toma de decisiones:** Los sistemas estratégicos pueden modificar el flujo de información y cambiar la dinámica de poder y responsabilidad dentro de la empresa.
+    *   **Solución:** Rediseñar procesos y estructuras si es necesario, asegurando que el sistema complemente la toma de decisiones y no la obstaculice.
+
+En resumen, para aprovechar el potencial de los sistemas estratégicos de información, **las organizaciones deben gestionar activamente los cambios, alinear los sistemas con sus estrategias, asegurar su adopción e integración efectiva, y proteger su infraestructura tecnológica.**
+
