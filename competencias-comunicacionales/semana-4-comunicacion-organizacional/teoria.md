@@ -21,7 +21,7 @@ Según su objetivo o administración, existen distintos tipos de organizaciones.
 - En las **cooperativas**, un grupo de personas se reúne voluntariamente para satisfacer necesidades comunes de sus socios, como ocurre con cooperativas de luz o agua. 
 - Por otro lado, las **ONG** (Organizaciones No Gubernamentales) son creadas también de forma voluntaria, pero actúan en el sector social sin pertenecer al estado; un ejemplo son las fundaciones.
 
-#### **4. Comunicación Organizacional**
+#### **Comunicación Organizacional**
 
 La **comunicación organizacional** es el proceso mediante el cual las personas que integran una organización intercambian información. Es una herramienta fundamental de trabajo que permite comprender las necesidades o intereses de la entidad, tanto hacia adentro (con el personal) como hacia afuera (con la sociedad, clientes o potenciales).
 
