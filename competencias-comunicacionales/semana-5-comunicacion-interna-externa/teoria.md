@@ -28,12 +28,3 @@ Es el tipo de comunicación en el que los mensajes se transmiten **hacia fuera d
 Dentro de la comunicación externa se pueden encontrar:
 - **Comunicación Operativa**: Son las comunicaciones diarias con clientes, proveedores o agentes con los que la organización interactúa en sus tareas. Por ejemplo, una empresa de telecomunicaciones informando a un cliente sobre una deuda vía mail o telefónicamente.
 - **Comunicación de Imagen**: Son acciones destinadas a posicionar la organización en la sociedad y ser reconocida por clientes, otras organizaciones y el público general. Es crítica para la percepción que el cliente o la sociedad tiene de la organización en el mercado. Un ejemplo son las publicidades en medios públicos masivos.
-
-# Canal de Comunicación
-
-Se refiere a los medios utilizados para intercambiar información, ya sea de manera horizontal o vertical, dentro de una organización. Al definir el canal, se debe considerar a quién va dirigido el mensaje y qué se desea comunicar.
-
-Existen dos tipos de canales de comunicación:
-
-- **Canal Formal**: El mensaje se transmite a través del canal oficialmente establecido y reconocido por la organización. Estos canales suelen estar definidos en los procesos organizacionales y son conocidos por todos los miembros para saber cómo actuar. Se utilizan para enviar documentos, manuales e informes. Ejemplos incluyen reuniones, emails y comunicados. Si un desarrollador debe enviar una estimación de tiempo para un desarrollo, el mail sería el canal formal correcto.
-- **Canal Informal**: Abarca cualquier medio de intercambio de información que **no está oficialmente reconocido o establecido** por la organización. Son medios disponibles para el uso de los colaboradores que permiten una comunicación ágil entre ellos para facilitar sus tareas. Ejemplos son conversaciones informales o chats. Si un desarrollador necesita consultar a otro sobre una línea de código, podría hacerlo vía chat.
