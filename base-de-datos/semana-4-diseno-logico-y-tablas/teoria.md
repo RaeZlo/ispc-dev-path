@@ -1,78 +1,54 @@
-# Diseño Lógico
+# Diseño Lógico de Bases de Datos
+El **Diseño Lógico** es una etapa fundamental en el proceso de diseño de bases de datos, que se puede descomponer en distintas fases. Surge a partir del diseño conceptual, transformando el esquema conceptual. Su objetivo es definir la **estructura de la base de datos** que puede soportar un sistema gestor de bases de datos (SGBD), independientemente del producto de SGBD concreto que se vaya a utilizar. Representa la estructura de la base de datos de forma **abstracta** pero lista para ser implementada. Además, busca asegurar que la base de datos refleje correctamente las reglas del negocio y sin redundancias.
 
-El **diseño lógico** es una etapa fundamental en la creación de bases de datos. Forma parte del esquema conceptual y da como resultado la estructura de la base de datos, definiendo las estructuras de datos que pueden soportar los sistemas gestores de bases de datos (SGBD). A este resultado se le llama **esquema lógico**.
+## Esquema Lógico
+El resultado del diseño lógico es el **Esquema Lógico**. El esquema lógico es la **representación detallada del modelo lógico** de una base de datos. Define qué **tablas** habrá, qué **campos** tendrá cada una, cómo se **relacionan** entre sí, y qué **restricciones** existen, como claves primarias (PK - Primary Key), claves foráneas (FK - Foreign Key), y dominios de datos.
 
-El objetivo del diseño lógico es representar la estructura de la base de datos de forma **abstracta**, pero lista para ser implementada en un SGBD relacional (como MySQL, PostgreSQL, SQL Server, etc.). Busca asegurar que la base de datos refleje las reglas del negocio correctamente y sin redundancias.
+Por ejemplo, un esquema lógico podría detallar una tabla `Clientes` con:
 
-El diseño lógico se determina según el SGBD que se vaya a utilizar, sin depender del producto concreto. Luego de obtener el esquema conceptual, se puede obtener el diseño lógico.
+* `id_cliente` (PK)
+* `nombre`
+* `correo`
+* `fecha_registro`
 
-## Diseño lógico: Esquema lógico, modelos lógicos
+Y una tabla `Pedidos` con:
 
-El **esquema lógico** es la **representación detallada del modelo lógico** de una base de datos. Define qué tablas habrá, qué campos tendrá cada una, cómo se relacionan entre sí, y qué restricciones existen (como claves primarias, foráneas, dominios de datos, etc.). Es el resultado del diseño lógico.
+* `id_pedido` (PK)
+* `fecha`
+* `id_cliente` (FK) que referencia a `Clientes.id_cliente`.
 
-El **modelo lógico** es el lenguaje que determina el esquema lógico y representa los datos de acuerdo con un modelo formal.
+## Modelo Lógico
+Un **Modelo Lógico** representa los datos de acuerdo con un modelo formal. El **modelo relacional** es el más común. En el modelo relacional, la información se organiza en **tablas** (también llamadas relaciones).
 
-El modelo lógico más común es el **modelo relacional**. En el modelo relacional, la información se organiza en **tablas** (relaciones), que usan **tuplas** (filas) para representar registros, y **atributos** (columnas) para representar propiedades o campos.
+## Transformación del DER al Modelo Relacional
+Al realizar el diseño lógico, después de obtener el esquema conceptual (como un Diagrama Entidad Relación - DER), se deben tener en cuenta varios conceptos fundamentales antes de transformar el DER a un modelo relacional. Estos conceptos incluyen qué son y cómo se estructuran las **tablas**, las **reglas de normalización** y las **12 reglas de Codd**.
 
-Existen otros modelos lógicos, menos comunes hoy en día, como:
-
-- **Jerárquico**: datos organizados como un árbol.
-- **De red**: nodos conectados por múltiples relaciones.
-- **Orientado a objetos**: combina estructuras de objetos con persistencia de datos.
-
-## Tablas: Estructura, filas, columnas, registros y campos
-
-Las **tablas** son la estructura fundamental del modelo relacional. Son objetos donde se guardan los datos organizados con un formato de **filas** y **columnas**. Representan entidades o relaciones y almacenan datos relacionados entre sí.
-
-### Estructura de una tabla:
-
-- **Filas** (registros o tuplas):  
-  Cada fila representa un registro o una entrada completa en la tabla, representando un solo objeto o entidad.  
-  Pueden almacenar valores nulos.  
-  Ejemplo: un cliente específico (Juan Pérez).  
-  En una tabla de estudiantes, cada estudiante (Laura, Pablo) sería una fila.
-
-- **Columnas** (campos o atributos):  
-  Cada columna representa un campo dentro del registro o una propiedad/característica de la entidad.  
-  Cada columna debe ser única y tener asociado un tipo de datos.  
-  Ejemplo: "correo" o "nombre".  
-  En una tabla de estudiantes: `id_estudiante`, `nombre`, `carrera`, `edad` son columnas.
-
-> Un **registro** es un sinónimo de fila.  
-> Un **campo** es un sinónimo de columna.
-
-Las tablas en bases de datos relacionales están compuestas por un conjunto de **campos (columnas)** y **registros (filas)**. Se relacionan entre sí mediante **claves primarias** y **claves foráneas**.
+### Reglas de transformación:
+- Todas las **entidades se convierten en tablas**.
+- Los **atributos** de las entidades se convierten en las **columnas** de la tabla correspondiente.
+- El **identificador** de la entidad se convierte en la **clave primaria** (PK) de la tabla.
+- Las **relaciones Muchos a Muchos (N\:M)** dan lugar a la creación de una **nueva tabla** cuya clave primaria estará compuesta por las claves primarias de las entidades asociadas.
+- En las **relaciones Uno a Muchos (1\:N)**, la clave primaria de la tabla con cardinalidad 1 pasa a la tabla con cardinalidad N como **clave foránea** (FK), relacionando así ambas tablas.
+- En las **relaciones Uno a Uno (1:1)**, las dos tablas involucradas **deberán fusionarse** en una sola, definiendo un identificador común como clave primaria.
 
 ## Las 12 reglas de Codd
-
-Las 12 reglas de Codd (numeradas del 0 al 12) son un conjunto de normas establecidas por Edgar Codd para que una base de datos del modelo relacional se considere verdaderamente relacional. A mayor cantidad de reglas cumplidas, más relacional será la base de datos.
+Las **12 reglas de Codd** son un conjunto de normas establecidas por Edgar Codd para que una base de datos basada en el modelo relacional se considere verdaderamente relacional. Cuantas más reglas se cumplan, más relacional será la base de datos.
 
 ### Reglas:
+1. **Regla 0 (Fundación)**: El sistema debe utilizar su estructura relacional exclusivamente para gestionar bases de datos.
+2. **Regla 1 (Información)**: Toda la información debe estar representada de forma unidireccional por los valores en posiciones dentro de las filas, dentro de las tablas (a nivel lógico).
+3. **Regla 2 (Acceso garantizado)**: Todos los datos deben ser accesibles; cada valor escalar individual debe ser lógicamente direccionable especificando el nombre de la tabla, la columna que lo contiene y la clave primaria.
+4. **Regla 3 (Tratamiento sistemático de los valores nulos)**: El SGBD debe manejar valores nulos, reconociéndolos como distintos de cualquier otro valor, independientemente del tipo de datos de la columna.
+5. **Regla 4 (Catálogo en línea relacional)**: El catálogo en línea (diccionario de datos) debe poder consultarse utilizando las mismas técnicas que para los datos (usando la estructura de la base de datos) y debe ser accesible para usuarios autorizados.
+6. **Regla 5 (Sublenguaje de datos completo)**: Debe existir al menos un lenguaje capaz de realizar todas las funciones del SGBD, permitiendo también que otras tareas se realicen con este lenguaje principal. SQL es un ejemplo de lenguaje que sirve para gestionar y organizar datos en una base de datos relacional y permite definir, manipular e integrar datos, así como controlar transacciones, seguridad y crear vistas.
+7. **Regla 6 (Actualización de vistas)**: Todas las vistas deben mostrar información actualizada, y los datos no pueden ser diferentes entre las vistas y las tablas base.
+8. **Regla 7 (Inserciones, modificaciones y eliminaciones de alto nivel)**: El sistema debe permitir la manipulación de datos a un alto nivel, es decir, sobre conjuntos de registros (tuplas o tablas simultáneamente).
+9. **Regla 8 (Independencia física de los datos)**: Los cambios físicos realizados en la base de datos no afectan a las aplicaciones ni a los esquemas lógicos.
+10. **Regla 9 (Independencia lógica de los datos)**: Los cambios realizados sobre el esquema lógico (nombres de tablas/columnas, modificación de registros) no afectan al resto de los esquemas ni a las aplicaciones externas.
+11. **Regla 10 (Independencia de integridad)**: Las reglas de integridad deben ser gestionadas y almacenadas por el SGBD, permitiendo cambios sin afectar a las aplicaciones existentes.
+12. **Regla 11 (Independencia de distribución)**: Las bases de datos pueden gestionarse o almacenarse de forma distribuida en distintos servidores sin afectar al uso ni a la programación del usuario; el esquema lógico debe mantenerse idéntico.
+13. **Regla 12 (No subversión)**: No se permitirán lenguajes o formas de acceso que ignoren o eviten las reglas anteriores.
 
-- **Regla 0 - Fundación**:  
-   El sistema debe utilizar su estructura relacional solamente para gestionar bases de datos.
-- **Regla 1 - Información**:  
-   Toda la información debe estar representada unidireccionalmente por los valores en posiciones dentro de las filas, dentro de las tablas. Los valores solo pueden estar representados de una forma: con valores en las tablas, a nivel lógico.
-- **Regla 2 - Acceso garantizado**:  
-   Todos los datos deben ser accesibles. Cada valor escalar individual debe ser lógicamente direccionable especificando el nombre de la tabla, la columna que lo contiene y la clave primaria.
-- **Regla 3 - Tratamiento sistemático de los valores nulos**:  
-   El DBMS debe tener la capacidad de manejar valores nulos, reconociéndolos como distintos a cualquier otro valor, independientemente del tipo de datos de la columna.
-- **Regla 4 - Catálogo en línea relacional**:  
-   El catálogo en línea (diccionario de datos) debe poder consultarse utilizando las mismas técnicas que para los datos. Debe dar acceso a la estructura de la base de datos y ser accesible para los usuarios autorizados.
-- **Regla 5 - Sublenguaje de datos completo**:  
-   Debe existir, por lo menos, un lenguaje capaz de realizar todas las funciones del DBMS, sin excluir ninguna función.  
-   SQL es un lenguaje informático de alto nivel para gestionar y organizar datos de bases de datos relacionales, que posee características como lenguaje de definición y manipulación de datos, control de transacciones, seguridad, etc.
-- **Regla 6 - Actualización de vistas**:  
-   Todas las vistas deben mostrar información actualizada. Los datos no pueden ser distintos entre las vistas y las tablas base.
-- **Regla 7 - Inserciones, modificaciones y eliminaciones de alto nivel**:  
-   El sistema debe permitir la manipulación de datos de alto nivel, es decir, sobre conjuntos de registros.
-- **Regla 8 - Independencia física de los datos**:  
-   Los cambios físicos que se realicen en la base de datos no afectan a las aplicaciones ni a los esquemas lógicos.
-- **Regla 9 - Independencia lógica de los datos**:  
-    Los cambios que se realicen sobre el esquema lógico no afectan al resto de los esquemas ni a las aplicaciones externas.
-- **Regla 10 - Independencia de integridad**:  
-    Las reglas de integridad deben ser gestionadas y almacenadas por el DBMS.
-- **Regla 11 - Independencia de distribución**:  
-    Las bases de datos pueden gestionarse o almacenarse de forma distribuida sin afectar su uso ni la programación.
-- **Regla 12 - No subversión**:  
-    No se permitirán lenguajes o formas de acceso que salteen las reglas anteriores.
+## Normalización
+
+Además de las reglas de Codd, la **normalización** es otra consideración crucial en el diseño lógico. Es una técnica para estandarizar y validar datos al diseñar tablas y sus relaciones, ayudando a eliminar la redundancia de datos y a proteger su integridad.
