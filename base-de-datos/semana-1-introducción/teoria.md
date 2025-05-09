@@ -1,164 +1,107 @@
-# **Sistema de Información (SI)**
-Un **sistema de información** es un conjunto organizado de **personas, procesos y herramientas** que se utilizan para 
-**recolectar, clasificar, procesar, almacenar y recuperar datos e información** de forma rápida y eficiente.
+# Conceptos fundamentales
+## **Sistemas de información (SI)**
+Son un conjunto ordenado de mecanismos diseñados para **administrar y procesar datos de manera fácil y rápida**. Están compuestos por una serie de recursos interconectados (humanos, hardware, software, datos, actividades). Su objetivo común es **organizar y optimizar la información de una organización**. No todos los SI requieren informática, aunque a menudo los sistemas informáticos constituyen la mayor parte de uno.
+Existen diferentes tipos de SI según su uso principal, como:
 
-Estos sistemas están formados por **recursos interconectados**, que trabajan en conjunto con un propósito informativo específico, 
-como puede ser procesar estadísticas, organizar archivos o ayudar en la toma de decisiones. Los recursos pueden ser:
-- Humanos  
-- Hardware (equipos)  
-- Software (programas)  
-- Datos  
-- Actividades o procesos  
+- Sistemas de Procesamiento de Transacciones (TPS) para gestionar información de transacciones.
+- Sistemas de Información Ejecutiva (EIS) para monitorear variables gerenciales.
+- Sistemas de Información Gerencial (MIS) para información general de la empresa.
+- Sistemas de Soporte a Decisiones (DSS) para la toma de decisiones.
 
-Aunque muchas veces se asocian con la tecnología, **no todos los sistemas de información son sistemas informáticos**. La informática puede ser una parte importante, pero también son fundamentales la organización, las personas y los procesos.  
-Los sistemas de información se usan en una gran variedad de contextos: empresas, gobiernos, universidades, museos, bibliotecas, redes sociales o aplicaciones digitales.
+## **Almacenamiento de datos**
+Es el proceso mediante el cual se guardan datos de manera persistente en dispositivos físicos o virtuales. Este almacenamiento puede ser físico (discos duros, SSD, cintas magnéticas) o virtualizado en entornos como la nube.
 
----
+Existen diferentes estructuras de almacenamiento:
+- Almacenamiento en bloque
+- Almacenamiento de archivos
+- Almacenamiento de objetos
 
-## **Tipos de Sistemas de Información**
-### 🧾 **1. TPS – Sistemas de Procesamiento de Transacciones**
-**¿Qué hacen?**  
-Registran y gestionan las **transacciones cotidianas** de una empresa. Se centran en operaciones básicas del día a día.
-**Ejemplos:**
-- Registrar una venta en una tienda  
-- Procesar un pago con tarjeta de crédito  
-- Actualizar inventario después de una compra  
-- Cargar horarios o datos logísticos
-**Tip para recordarlo:**  
-Piensa en las cosas que pasan **todos los días** en una empresa: vender, comprar, pagar... ¡eso lo maneja el TPS!
+El almacenamiento de objetos, por ejemplo, permite guardar datos como unidades individuales (objetos) con metadatos y un identificador único, siendo ideal para datos no estructurados como archivos multimedia. Este tipo de almacenamiento se usa ampliamente en servicios como Amazon S3.
 
-### 📊 **2. MIS – Sistemas de Información Gerencial**
-**¿Qué hacen?**  
-Organizan y resumen **información interna** para ayudar a los gerentes de nivel medio a **planificar, gestionar y tomar decisiones**.
-**Ejemplos:**
-- Informes de ventas mensuales  
-- Estadísticas de producción  
-- Presupuesto e inventarios  
-- Gráficos de desempeño de empleados
-**Tip para recordarlo:**  
-MIS = “Resumen de lo que pasa adentro de la empresa” → ideal para gerentes que toman decisiones basadas en datos internos.
+El almacenamiento es gestionado por el **DBMS**, que organiza los datos lógicamente (tablas, índices, vistas) y los traduce en operaciones sobre los dispositivos físicos.
 
-### 📈 **3. DSS – Sistemas de Soporte a Decisiones**
-**¿Qué hacen?**  
-Analizan datos **internos y externos** para ayudar a tomar **decisiones complejas**. Usan modelos, análisis de escenarios y comparaciones.
-**Ejemplos:**
-- Analizar si conviene abrir una nueva sucursal  
-- Comparar proveedores  
-- Evaluar costos vs. beneficios  
-- Simular “¿qué pasaría si…?”
-**Tip para recordarlo:**  
-DSS = “Tomo decisiones difíciles” → me ayuda a elegir la mejor opción usando muchos datos y análisis.
+## **Diferencia entre datos e información**
+- Los **datos** son hechos, cifras u observaciones sin procesar que por sí solos no tienen significado completo. Por ejemplo, “42” o “2025-05-09” son datos.
+- La **información**, en cambio, surge cuando los datos son procesados, organizados o interpretados para adquirir un contexto útil. Por ejemplo, “42 unidades vendidas el 9 de mayo de 2025” es información, porque comunica algo comprensible y relevante.
 
-### 🧠 **4. EIS – Sistemas de Información Ejecutiva**
-**¿Qué hacen?**  
-Brindan información **clave y estratégica** (interna y externa) a los **altos directivos** para que tengan una visión general rápida de la empresa.
-**Ejemplos:**
-- Dashboards con indicadores clave  
-- Comparaciones entre regiones o áreas  
-- Tendencias del mercado y situación económica o política
-**Tip para recordarlo:**  
-EIS = “Vista desde arriba” → para ejecutivos que necesitan saber **cómo va todo**, sin meterse en los detalles.
+En un sistema informático, el proceso central es convertir datos en información para apoyar la toma de decisiones. En este contexto, los datos reflejan aspectos del mundo real o “minimundo” que la base de datos modela, y el objetivo es representarlos con fidelidad y precisión.
 
----
+# Bases de datos: Definición, objetivos y usos generales
+## **Definición**
 
-## 📦 **Almacenamiento de Datos**
-El **almacenamiento de datos** es el proceso de **guardar y conservar información digital**, ya sea en **dispositivos físicos** 
-(como discos duros) o en la **nube** (almacenamiento remoto a través de internet).
+Una base de datos es una **colección de datos relacionados**. Son los repositorios donde se almacenan los datos relacionados entre sí, almacenados sistemáticamente para su posterior procesamiento para entregar información al usuario. Una base de datos computerizada se crea y mantiene con un grupo de aplicaciones específicas o mediante un sistema de administración de bases de datos (DBMS).
 
-## 🔍 **Tipos de Almacenamiento de Datos**
-### 1. 🗂️ **Almacenamiento de Archivos**
-- **Definición**: Organiza los datos en un sistema jerárquico de archivos y carpetas.  
-- **Funcionamiento**:  
-  - Datos → Archivos  
-  - Archivos → Carpetas  
-  - Carpetas → Directorios/Subdirectorios  
-- **Uso común**: Entornos donde los usuarios acceden a archivos específicos de forma manual, como documentos, imágenes, PDFs, etc.
-### 2. 🧱 **Almacenamiento en Bloque**
-- **Definición**: Divide los datos en bloques individuales, cada uno con un identificador único.  
-- **Ventajas**:  
-  - Alta velocidad  
-  - Mayor eficiencia  
-  - Confiabilidad en transferencias de datos  
-- **Uso común**:  
-  - Bases de datos  
-  - Aplicaciones empresariales críticas  
-  - Máquinas virtuales
-### 3. 🧩 **Almacenamiento de Objetos**
-- **Definición**: Ideal para manejar grandes volúmenes de datos **no estructurados**.  
-- **Ejemplos de datos no estructurados**:
-  - Correos electrónicos  
-  - Videos y fotos  
-  - Archivos de audio  
-  - Páginas web  
-  - Datos de sensores  
-- **Ventajas**: Escalabilidad, accesibilidad y eficiencia en el manejo de contenido multimedia y web.
+## **Objetivos y usos generales**
+Las bases de datos tienen como propósito central organizar grandes volúmenes de datos de manera eficiente, segura y accesible, facilitando su procesamiento y análisis.
 
-## ☁️ **Nota adicional: Almacenamiento en la Nube**
-- **La nube** permite almacenar cualquier tipo de dato en servidores remotos accesibles desde internet.  
-- Puede incorporar cualquiera de los tres tipos anteriores (archivos, bloques, objetos), según el proveedor y el caso de uso.
+Entre las funciones clave de una base de datos, se destacan:
 
----
+- **Definición**: Especificar qué datos se almacenarán, cómo se estructurarán y qué restricciones aplican.
+- **Construcción**: Guardar físicamente los datos en un medio controlado por el DBMS.
+- **Manipulación**: Incluir operaciones como:
 
-## 🔎 **Diferencia entre Datos e Información**
-### 📊 **Datos**
-- Son **elementos básicos**, sin procesar.  
-- Por sí solos **no tienen significado**.  
-- Ejemplo: `32°C` (sin contexto, solo un número con unidad).
-### 💡 **Información**
-- Es el resultado de **procesar, organizar y contextualizar** los datos.  
-- Tiene **sentido, relevancia y utilidad** para quien la interpreta.  
-- Debe ser:  
-  ✅ Útil  
-  ✅ Actual  
-  ✅ Confiable  
-- Ejemplo: `32°C en Buenos Aires el 15 de enero a las 14 hs` → ahora **sabemos** el clima en un lugar y momento específico.
+  - **Consulta**: Recuperar información específica según criterios.
+  - **Actualización**: Agregar, modificar o eliminar datos para reflejar cambios en el mundo real.
+  - **Generación de informes**: Crear salidas estructuradas con fines analíticos o administrativos.
+  - **Acceso concurrente**: Permitir que múltiples usuarios o procesos interactúen con los datos sin conflictos.
 
-## ⚙️ **Relación entre datos e información**
-- Los **datos** son la materia prima.  
-- La **información** es el producto final tras el procesamiento de esos datos.  
-- Todo sistema informático busca **administrar los datos** para generar **información útil**, que apoye la **toma de decisiones**.
+Las bases de datos son esenciales en negocios, salud, justicia, bibliotecas, comercio electrónico, sistemas financieros, IoT y más. Además, la tecnología de bases de datos permite automatizar tareas, reducir errores, proteger datos sensibles y facilitar la toma de decisiones estratégicas.
 
-## 📌 **Ejemplo práctico**
+# Tipos de bases de datos (Enfoque técnico): SQL vs NoSQL
+La clasificación principal de los DBMS se basa en los modelos de datos. A lo largo del tiempo, han surgido diferentes tipos de bases de datos, siendo los principales las bases de datos relacionales (SQL) y las bases de datos no relacionales (NoSQL).
+El término NoSQL, acuñado a mediados/finales de la década de 2000, significa "no solo SQL" o "sin SQL", y a menudo se usa indistintamente con "no relacional".
 
-| Dato | Información |
-|------|-------------|
-| 32°C | Temperatura actual en Ciudad de México a las 13:00 hrs |
-| 1013 hPa | Presión atmosférica para análisis meteorológico |
-| 80% | Humedad relativa para prever condiciones climáticas |
+## **Bases de datos relacionales (SQL)**
 
----
+- Se basan en el **modelo relacional** propuesto por Edgar F. Codd en 1970.
+- Utilizan **tablas** para almacenar datos y **relaciones** para establecer conexiones entre ellas. Las tablas están compuestas por un conjunto de **campos o columnas** y **registros o filas**. Las relaciones entre tablas se establecen mediante **claves primarias y claves foráneas**.
+- El modelo relacional **normaliza** los datos en tablas y un **esquema define estrictamente** las tablas, filas, columnas, índices, relaciones y otras restricciones. La base de datos **impone la integridad referencial**.
+- Se utiliza **Structured Query Language (SQL)** para crear y editar estas tablas relacionales. SQL es un lenguaje de consulta de alto nivel que puede especificar y recuperar muchos registros con una sola sentencia (orientado a conjuntos). A menudo especifica *qué* datos recuperar, no *cómo*. SQL incluye construcciones para definición de esquema (DDL), manipulación de datos (DML), definición de vistas (VDL), control de transacciones, seguridad y posibilidad de ser incrustado en otros lenguajes.
+- Están diseñadas para **aplicaciones de procesamiento de transacciones en línea (OLTP) altamente coherentes y transaccionales**, y son buenas para procesamiento analítico en línea (OLAP).
+- Ejemplos de motores comerciales: SQLite, MySQL, Microsoft SQL Server, Oracle, MariaDB.
 
-# **Base de Datos**
-Es un conjunto organizado de datos almacenados de forma estructurada en un sistema informático. La estructura de la base de datos permite 
-almacenar, gestionar y recuperar información de manera eficiente. Existen diferentes modelos de bases de datos, como el relacional 
-(organizado en tablas), no relacional (almacena datos sin un esquema fijo, como en documentos o claves-valor) y orientado a objetos 
-(donde los datos se representan como objetos), que definen cómo se organizan, almacenan y acceden a los datos.
+## **Bases de datos no relacionales (NoSQL)**
 
-## 🗄️ **Tipos de Bases de Datos**
-Las bases de datos pueden clasificarse según **la variabilidad** de los datos o según **el contenido** que manejan.
+- Surgieron para abordar desafíos de las aplicaciones modernas, como el **procesamiento de grandes volúmenes de datos de fuentes dispares** que no encajan perfectamente en el modelo relacional.
+- **No requieren estructuras de datos fijas (tablas)** y proporcionan **esquemas flexibles** que permiten un desarrollo más rápido e iterativo.
+- Ofrecen una **variedad de modelos de datos** optimizados para el rendimiento y la escala, como **clave-valor, documentos, gráficos y columnas**.
+- Se utilizan en **entornos distribuidos** que requieren disponibilidad y operatividad constantes, gestionando **grandes volúmenes de datos**.
+- Priorizan el **rendimiento por encima de una sólida coherencia de los datos** y mantener las relaciones (integridad referencial). Permiten un **escalado horizontal** mediante fragmentación de servidores. Soportan **datos semiestructurados y sin estructurar**.
+- Las API suelen ser **basadas en objetos**, permitiendo almacenar y recuperar estructuras de datos fácilmente.
+- Están diseñadas para **varios patrones de acceso a datos, incluyendo aplicaciones de baja latencia**.
+  Los casos de uso típicos incluyen:
+  - Aplicaciones móviles
+  - IoT
+  - Juegos
+  - Aplicaciones web de alto rendimiento
+  - Redes sociales
+  - Motores de recomendaciones
+  - Detección de fraude
+  - Análisis sobre datos semiestructurados
+- Ejemplos de motores:
+  - MongoDB (orientado a documentos/ficheros)
+  - Redis (clave-valor, usado para caché)
+  - Amazon DynamoDB (clave-valor, rendimiento consistente)
+  - Amazon Neptune (grafos)
+  - Amazon OpenSearch Service (búsqueda, datos no estructurados/semiestructurados)
 
-### 📌 **Según su Variabilidad**
-#### 1. 🧊 **Bases de Datos Estáticas**
-- **Características**:  
-  - Los datos **no se modifican**.  
-  - Diseñadas para **consulta y lectura**.  
-  - Se utilizan para:  
-    - Almacenar **datos históricos**.  
-    - Realizar **análisis estadísticos**.  
-    - **Apoyar la toma de decisiones**.
-#### 2. 🔁 **Bases de Datos Dinámicas**
-- **Características**:  
-  - Los datos **se pueden actualizar** (agregar, modificar o eliminar).  
-  - Permiten el trabajo con **información en tiempo real**.  
-  - Se usan en **sistemas activos**, como sitios web, aplicaciones, etc.
+> Es posible emplear una combinación de bases de datos SQL y NoSQL en las aplicaciones (enfoque híbrido) para optimizar la relación precio-rendimiento para cada carga de trabajo.
 
-### 📌 **Según su Contenido**
-Se clasifican de acuerdo con el tipo de información que priorizan.
+# Tipos de bases de datos (Enfoque teórico): Según su variabilidad y Según su contenido
 
-- Bases de datos jerárquicas: Organizan los datos en una estructura de árbol, con relaciones padre-hijo. Cada hijo tiene un único padre.
-- Bases de datos de red: Similar a las jerárquicas, pero permiten relaciones más complejas: un hijo puede tener varios padres.
-- Bases de datos deductivas: Permiten realizar inferencias lógicas a partir de los datos almacenados, usando reglas y hechos.
-- Bases de datos multidimensionales: Diseñadas para analizar grandes volúmenes de datos desde distintas perspectivas (por ejemplo, ventas por región, tiempo, producto).
-- Bases de datos bibliográficas: Almacenan referencias a documentos como libros, artículos, tesis, etc., sin contener el texto completo.
-- Bases de datos de texto completo: Almacenan documentos en su totalidad, permitiendo búsquedas dentro del contenido textual.
-- Bases de datos relacionales: Organizan los datos en tablas relacionadas entre sí mediante claves. Es el modelo más común en aplicaciones actuales.
+Las bases de datos pueden clasificarse de distintas formas.
+
+## **Según su variabilidad**
+- **Bases de datos estáticas**: Son aquellas cuyos datos **no pueden modificarse**, estando diseñadas especialmente para la **lectura** de sus datos. Suelen utilizarse para almacenar **datos históricos** que no cambiarán, realizar proyecciones estadísticas y ayudar a la toma de decisiones.
+- **Bases de datos dinámicas**: A diferencia de las estáticas, sus datos **se pueden actualizar**, ya sea agregando, modificando o eliminando los mismos durante el transcurso del tiempo.
+
+## **Según el contenido**
+- **Relacionales**: Estructuran los datos en tablas interrelacionadas. Son el modelo predominante hoy.
+- **Jerárquicas**: Organizan la información en forma de árbol, donde cada registro tiene un único padre. Usadas históricamente en sistemas legados.
+- **De red**: Permiten relaciones más complejas (varios padres por nodo), siendo una evolución del modelo jerárquico.
+- **Multidimensionales**: Optimizadas para análisis de grandes volúmenes (OLAP), representan datos en cubos de dimensiones múltiples.
+- **Deductivas**: Incorporan lógica de inferencia para derivar nuevos datos a partir de reglas.
+- **Bibliográficas**: Contienen referencias de documentos, comúnmente usadas en investigación académica.
+- **Texto completo**: Permiten búsquedas y consultas sobre documentos extensos no estructurados.
+
+> Estas clasificaciones no son excluyentes. Una misma base de datos puede combinar varias características según el sistema y sus objetivos.
