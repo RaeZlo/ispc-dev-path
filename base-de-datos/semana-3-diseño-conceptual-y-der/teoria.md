@@ -1,51 +1,56 @@
-# Diseño de Bases de Datos
+# Diseño de Bases de Datos: Introducción y Etapas del Diseño
+El **diseño de una base de datos** es un proceso estructurado cuyo objetivo es construir un sistema capaz de satisfacer los requisitos de información de una organización o aplicación. Este proceso se divide en distintas etapas, que abordan el diseño desde diferentes niveles de abstracción y pueden tratarse de forma independiente.
 
-El diseño de bases de datos es un proceso complejo que se descompone en distintas etapas: diseño conceptual, diseño lógico y diseño físico. El objetivo es obtener una base de datos que satisfaga los requisitos informacionales de un sistema informático.
+Las principales etapas del diseño de bases de datos son:
+1. **Diseño conceptual**: Parte de la recopilación de los requisitos del usuario. Define los elementos fundamentales de la información sin considerar detalles técnicos.
+2. **Diseño lógico**: Traduce el diseño conceptual a estructuras que puedan ser implementadas por un tipo de SGBD (por ejemplo, relacional), pero sin depender de un producto específico.
+3. **Diseño físico**: Define cómo se almacenarán los datos de manera eficiente en un SGBD concreto, incluyendo detalles como índices, particiones y métodos de acceso.
 
-## Diseño Conceptual
+Además, el proceso completo incluye el **mapeo entre modelos**, como la conversión del modelo conceptual al modelo relacional.
 
-El diseño conceptual surge de las especificaciones de requisitos del usuario, a partir de lo cual se obtiene el esquema conceptual de la base de datos. Este esquema define la estructura de la base de datos independientemente de la tecnología o el sistema de gestión de bases de datos (SGBD). El modelo conceptual es el lenguaje utilizado para describir el esquema conceptual. El objetivo principal de esta etapa es describir la información de la base de datos en sí misma y no cómo se almacenará.
+# Diseño Conceptual: Requisitos, Esquema y Modelo
+## Especificación de Requisitos
+El diseño conceptual comienza con la **especificación de requisitos**, una etapa en la que los diseñadores se comunican con los usuarios para identificar sus necesidades de información y procesos. Esta información se documenta y constituye la base para definir la estructura lógica del sistema.
 
-## Diagrama Entidad-Relación (DER)
+## Esquema Conceptual
+A partir de los requisitos, se construye el **esquema conceptual**, que describe la **estructura global de la base de datos** desde la perspectiva de los usuarios. Este esquema:
 
-El Diagrama Entidad-Relación (DER) es una herramienta gráfica utilizada para diseñar modelos de bases de datos. Este modelo representa la estructura de la base de datos en términos de entidades, atributos y relaciones.
+- Es **independiente de la tecnología** o del sistema gestor específico.
+- Oculta los detalles del almacenamiento físico.
+- Se enfoca en **entidades**, **relaciones**, **atributos**, operaciones requeridas y restricciones de integridad.
+- Se define durante la fase de diseño y **no debería cambiar frecuentemente**.
 
-### Entidades
+## Modelo Conceptual
+El **modelo conceptual** es el conjunto de conceptos y notaciones que se utiliza para representar el esquema conceptual. También se le denomina **modelo de datos de alto nivel** porque está diseñado para ser comprensible por usuarios no técnicos.
 
-Una entidad se puede definir como una unidad que tiene atributos y contiene información que conforma una base de datos. Representa un objeto del mundo real, una persona, un lugar o un concepto. Cada entidad debe tener un nombre único. En un DER, una entidad se representa con un rectángulo.
+Entre sus componentes más comunes están:
+- **Entidades**: Objetos distinguibles del mundo real.
+- **Atributos**: Propiedades que describen las entidades.
+- **Relaciones**: Asociaciones entre entidades.
 
-### Atributos
+El objetivo de esta etapa no es definir cómo se almacenarán físicamente los datos, sino **qué información se debe representar**.
 
-Los atributos son las características o propiedades de cada entidad. Describen las propiedades de la entidad y deben ser únicos y distintos entre sí. En un DER, los atributos se representan mediante un círculo conectado a la entidad con una línea. Para cumplir con la primera forma normal (1FN), cada columna (que corresponde a un atributo) debe tener un solo valor en cada fila (ser atómico).
+# Diagrama Entidad-Relación (DER)
+El **Diagrama Entidad-Relación (DER)** es una herramienta gráfica que se utiliza para representar el modelo conceptual de una base de datos. Facilita la visualización de la estructura de la información y las relaciones entre los elementos principales.
 
-### Relaciones
+## Elementos del DER
+- **Entidades**: Representan objetos o conceptos del mundo real, como “Cliente”, “Producto” o “Empleado”. Se representan mediante **rectángulos**.
+- **Atributos**: Son las propiedades de una entidad, como “nombre”, “dirección” o “número de teléfono”. Se conectan a las entidades mediante **líneas** y se representan con **óvalos**.
+- **Relaciones**: Definen asociaciones entre dos o más entidades. Por ejemplo, una relación "Realiza" puede vincular a “Cliente” con “Pedido”. Se representan mediante **rombos**.
+- **Cardinalidad**: Indica la cantidad de instancias de una entidad que pueden estar asociadas con una instancia de otra. Por ejemplo:
+  - **1:1** (uno a uno)
+  - **1\:N** (uno a muchos)
+  - **N\:M** (muchos a muchos)
+- **Claves primarias**: Identifican de forma única a cada instancia de una entidad. Son fundamentales para la implementación del modelo relacional posterior, ya que permiten direccionar los datos de manera lógica.
 
-Las relaciones definen cómo las entidades están conectadas o asociadas entre sí. Cada relación debe tener un nombre que describa la conexión entre las entidades. En un DER, una relación se representa con un rombo que conecta las entidades relacionadas.
+# Transformación del Modelo ER al Modelo Relacional
+El modelo Entidad-Relación proporciona una base sólida para la creación de bases de datos relacionales. Durante el proceso de transformación:
 
-### Cardinalidad
+- Las **entidades** se convierten en **tablas**.
+- Los **atributos** se traducen en **columnas**.
+- La **clave primaria** de una entidad se mantiene como identificador de la tabla.
+- Las **relaciones** se representan como:
+  - **Claves foráneas**, cuando hay relaciones 1\:N.
+  - **Tablas intermedias**, cuando las relaciones son N\:M.
 
-La cardinalidad o multiplicidad indica la cantidad de elementos de una entidad que se relacionan con una instancia de otra entidad. Especifica cuántos objetos de una entidad están relacionados con cuántos objetos de otra entidad a través de la relación. Se puede expresar como uno (1), muchos (*), o un rango específico (ej., 0..1 o 1..N). La cardinalidad se representa en el DER mediante símbolos colocados junto a las líneas que conectan las entidades. Los tipos comunes de cardinalidad son:
-
-- **Uno a Uno (1:1)**: Un elemento de una entidad se relaciona con un solo registro de otra entidad y viceversa.
-- **Uno a Muchos (1:M)**: Un registro de una entidad A se puede relacionar con cero o muchos registros de otra entidad B, y cada registro de B se relaciona con un solo registro de A.
-- **Muchos a Muchos (N:M)**: Un registro de una entidad se relaciona con cero o varios registros de otra entidad.
-
-Definir correctamente las cardinalidades es crucial para un modelo ER preciso.
-
-## Normalización de Bases de Datos
-
-La normalización es un proceso que aplica reglas para organizar los datos de una base de datos de manera más eficiente. Su objetivo es reducir la redundancia de datos, mejorar la integridad de los datos y evitar errores en la manipulación de la información. La normalización se divide en diferentes niveles o formas normales. Las primeras tres, desarrolladas por Edgard Codd (1FN, 2FN, y 3FN), son las más importantes para asegurar la integridad de la base de datos.
-
-### Primera Forma Normal (1FN)
-
-Requiere que cada tabla tenga una clave primaria única, no se permitan valores repetidos en las columnas, y que cada columna tenga un solo valor atómico en cada fila. El ejemplo de la tabla "ventas" que se corrige creando "detalle_ventas" ilustra cómo eliminar la repetición de productos en una misma venta para cumplir con la 1FN.
-
-### Segunda Forma Normal (2FN)
-
-Establece que cada atributo no clave de una tabla debe depender funcionalmente de la clave primaria completa. Esto es relevante cuando una tabla tiene múltiples claves primarias (clave primaria compuesta), donde cada atributo debe depender de todas las claves primarias y no solo de una parte. El ejemplo de la tabla "Pedidos" con una clave primaria compuesta ("numero_pedido", "fecha_pedido") y el atributo "codigo_cliente" que solo depende de "numero_pedido", muestra la necesidad de dividir la tabla en "Pedidos" y "Clientes" para cumplir con la 2FN.
-
-### Tercera Forma Normal (3FN)
-
-Se enfoca en la eliminación de las dependencias transitivas. Una dependencia transitiva ocurre cuando un atributo depende de otro atributo que no es la clave primaria. Para aplicar la 3FN, se debe asegurar que cada atributo no clave dependa solo de la clave primaria de la tabla o de otros atributos clave. El ejemplo de la tabla "ventas" donde "nombre_producto" y "cantidad" dependen de "id_producto" (un atributo no clave) en lugar de la clave primaria "id_venta", se corrige creando una tabla "Productos" separada.
-
-La aplicación de las formas normales puede llevar a una mayor cantidad de tablas, pero garantiza una mayor integridad y consistencia de los datos.
+Esta transformación permite implementar el diseño conceptual en un **Sistema Gestor de Bases de Datos Relacional (SGBDR)**, garantizando que se mantenga la integridad y lógica de los datos definidos originalmente.
