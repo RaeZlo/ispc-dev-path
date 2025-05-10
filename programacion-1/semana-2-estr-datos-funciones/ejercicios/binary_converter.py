@@ -8,22 +8,26 @@ def int_to_binary(number:int) -> str:
     if not isinstance(number, int):
         raise TypeError('El valor debe ser un número entero.')
     
-    return bin(number)[2:]
+    binary = bin(abs(number))[2:]  
+    return f"-{binary}" if number < 0 else binary
 
 
 def binary_to_int(binary:str) -> int:
     if not isinstance(binary, str):
         raise TypeError('La entrada debe ser una cadena de texto.')
-    
-    if not all(char in '01' for char in binary):
+
+    is_negative = binary.startswith('-')
+    digits = binary[1:] if is_negative else binary
+
+    if not all(char in '01' for char in digits):
         raise ValueError('La cadena debe contener solo 0s y 1s.')
-
-
-    return int(binary, base=2)
+    
+    value = int(digits, base=2)
+    return -value if is_negative else value
 
 
 def main():
-    for number in [13, 0, 7, 255]:
+    for number in [13, 0, 7, 255, -10]:
         binary = int_to_binary(number)
         print(f'Binario de {number} es {binary}')
         original = binary_to_int(binary)
